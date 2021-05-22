@@ -1,0 +1,1275 @@
+ARM GAS  C:\Users\unyacat\AppData\Local\Temp\ccqniSF6.s 			page 1
+
+
+   1              		.syntax unified
+   2              		.cpu cortex-m0
+   3              		.fpu softvfp
+   4              		.eabi_attribute 20, 1
+   5              		.eabi_attribute 21, 1
+   6              		.eabi_attribute 23, 3
+   7              		.eabi_attribute 24, 1
+   8              		.eabi_attribute 25, 1
+   9              		.eabi_attribute 26, 1
+  10              		.eabi_attribute 30, 2
+  11              		.eabi_attribute 34, 0
+  12              		.eabi_attribute 18, 4
+  13              		.thumb
+  14              		.syntax unified
+  15              		.file	"Advertising_LED_PM.c"
+  16              		.text
+  17              	.Ltext0:
+  18              		.section	.gnu.lto_.profile.9235e7c1,"",%progbits
+  19 0000 789C6361 		.ascii	"x\234ca`d`a`\000\222\034l\000\000\200\000\031"
+  19      60646061 
+  19      6000921C 
+  19      6C000080 
+  19      0019
+  20              		.text
+  21              		.section	.gnu.lto_.icf.9235e7c1,"",%progbits
+  22 0000 789C6361 		.ascii	"x\234ca`d\000\001a\006\004`f\330{u\337BN\306\245O\027"
+  22      60640001 
+  22      61060460 
+  22      66D87B75 
+  22      DF424EC6 
+  23 0017 D8309D7F 		.ascii	"\3300\235\177rn\031/\003\000W\345\010\263"
+  23      726E192F 
+  23      030057E5 
+  23      08B3
+  24              		.text
+  25              		.section	.gnu.lto_.jmpfuncs.9235e7c1,"",%progbits
+  26 0000 789C6361 		.ascii	"x\234ca`d\000\001\016\006\004`\202b\000\001^\000\022"
+  26      60640001 
+  26      0E060460 
+  26      82620001 
+  26      5E0012
+  27              		.text
+  28              		.section	.gnu.lto_.inline.9235e7c1,"",%progbits
+  29 0000 789C6361 		.ascii	"x\234ca`d\000\001\015\006\004`b``ead`bY \317\300\266"
+  29      60640001 
+  29      0D060460 
+  29      62606065 
+  29      61646062 
+  30 0019 409E0922 		.ascii	"@\236\011\"\206!\304\000\000G\374\003^"
+  30      8621C400 
+  30      0047FC03 
+  30      5E
+  31              		.text
+  32              		.section	.gnu.lto_.pureconst.9235e7c1,"",%progbits
+  33 0000 789C6361 		.ascii	"x\234ca`d`e```b\220b\222\002\000\000\357\000C"
+  33      60646065 
+  33      60606062 
+ARM GAS  C:\Users\unyacat\AppData\Local\Temp\ccqniSF6.s 			page 2
+
+
+  33      90629202 
+  33      0000EF00 
+  34              		.text
+  35              		.section	.gnu.lto_Advertising_LED_Sleep.9235e7c1,"",%progbits
+  36 0000 789C4D50 		.ascii	"x\234MP\277KBQ\024>\347\336\347\017\214\240=\207VAt"
+  36      BF4B4251 
+  36      143EE7DE 
+  36      E70F8CA0 
+  36      3D875641 
+  37 0015 E91F888A 		.ascii	"\351\037\210\212\032\012$WAB\037\341\242`\326\372\256"
+  37      1A0A2457 
+  37      41421FE1 
+  37      A260D6FA 
+  37      AE
+  38 0026 3F5E6943 		.ascii	"?^iC\330\240A\020Q\020\332\017\263\206\"i\021i\214\232"
+  38      D8A04110 
+  38      5110DA0F 
+  38      B3862269 
+  38      11698C9A 
+  39 003a 9A5AA2C1 		.ascii	"\232Z\242\301A\032\014r)\324\316y.\035\270\234{\277"
+  39      411A0C72 
+  39      29D4CE79 
+  39      2E1DB89C 
+  39      7BBF
+  40 004c F3DDEF3B 		.ascii	"\363\335\357;\347h\200\300\261H\311Gy\222\016J@Q|\006"
+  40      E76880C0 
+  40      B148C947 
+  40      79920E4A 
+  40      40517C06 
+  41 0060 483B0522 		.ascii	"H;\005\"_\224\023\301\020h`O\364\005\266\266\333\015"
+  41      5F9413C1 
+  41      1068604F 
+  41      F405B6B6 
+  41      DB0D
+  42 0072 E1A9288A 		.ascii	"\341\251(\212ws_\252j\023M\0110\024\226\022`\005=@\264"
+  42      77735FAA 
+  42      6A134D09 
+  42      30149612 
+  42      60053D40 
+  43 0087 8F9B4169 		.ascii	"\217\233Ai\334\236c\332\324\250\210U\264\263]}\245\251"
+  43      DC9E63DA 
+  43      D4A88855 
+  43      B4B35D7D 
+  43      A5A9
+  44 0099 86C3AC6A 		.ascii	"\206\303\254j>\330zR\023`JB\273\304`\257/!8\3136\266"
+  44      3ED87A52 
+  44      13604A42 
+  44      BBC460AF 
+  44      2F2138CB 
+  45 00af 7E7606A7 		.ascii	"~v\006\247c\374)+\331\267l\266^\034\337\302\224\002"
+  45      63FC292B 
+  45      D9B76CB6 
+  45      5E1CDFC2 
+  45      9402
+  46 00c1 59BF7F57 		.ascii	"Y\277\177W?p\215\236\371\255\242\322\010\272=\331+\341"
+  46      3F708D9E 
+  46      F9ADA2D2 
+ARM GAS  C:\Users\unyacat\AppData\Local\Temp\ccqniSF6.s 			page 3
+
+
+  46      08BA3DD9 
+  46      2BE1
+  47 00d3 111EA673 		.ascii	"\021\036\246s\324\221\304st\343\031\272\311\370\202"
+  47      D491C473 
+  47      74E319BA 
+  47      C9F882
+  48 00e2 506863A6 		.ascii	"Phc\246|\354e\275\377b\232%\326h|\2769\214\276\312+"
+  48      7CEC65BD 
+  48      FF629A25 
+  48      D6687CBE 
+  48      398CBECA 
+  49 00f7 35415881 		.ascii	"5AX\201\346a\270\363\364\372\350bAe\3416\254\321\022"
+  49      E661B8F3 
+  49      F4FAE862 
+  49      4165E136 
+  49      ACD112
+  50 010a 2E59928A 		.ascii	".Y\222\212\273\367\327\005\247\277\306\003*\303\224"
+  50      BBF7D705 
+  50      A7BFC603 
+  50      2AC394
+  51 0119 76BC2297 		.ascii	"v\274\"\227\201\265\005\254\243\237\232\206\016f\232"
+  51      81B505AC 
+  51      A39F9A86 
+  51      0E669A
+  52 0128 BF36B6B4 		.ascii	"\2776\266\264V\323\245\316i6\242x\027\364\270\236\\"
+  52      56D3A5CE 
+  52      6936A278 
+  52      17F4B89E 
+  52      5C
+  53 0139 4DE9D170 		.ascii	"M\351\321p0\261\221\214\350\241@01;\035\232\211n\352"
+  53      30B1918C 
+  53      E8A14030 
+  53      313B1D9A 
+  53      896EEA
+  54 014c C9546C3D 		.ascii	"\311Tl=\026_\013/\315\317\205\003\313\276\010\374\001"
+  54      165F0B2F 
+  54      CDCF8503 
+  54      CBBE08FC 
+  54      01
+  55 015d 6B3D82AC 		.ascii	"k=\202\254"
+  56              		.text
+  57              		.section	.gnu.lto_Advertising_LED_backup.9235e7c1,"",%progbits
+  58 0000 789C6361 		.ascii	"x\234ca`d\000\001k \206\260\030\030\37621\256\177\263"
+  58      60640001 
+  58      6B2086B0 
+  58      1818FE32 
+  58      31AE7FB3 
+  59 0014 F327EF17 		.ascii	"\363'\357\027\246Vf\240 \220{\341\356\212\343\374\026"
+  59      A65666A0 
+  59      20907BE1 
+  59      EE8AE3FC 
+  59      16
+  60 0025 DB1A3A16 		.ascii	"\333\032:\0264\030\26423\376cb`\\\316(\363\217\211\021"
+  60      3418B432 
+  60      33FE6362 
+  60      605CCE28 
+  60      F38F8911 
+ARM GAS  C:\Users\unyacat\AppData\Local\Temp\ccqniSF6.s 			page 4
+
+
+  61 0039 42318128 		.ascii	"B1\201(\006\306\025\214\026\014\000\345\232\024I"
+  61      06C6158C 
+  61      160C00E5 
+  61      9A1449
+  62              		.text
+  63              		.section	.gnu.lto_Advertising_LED_Wakeup.9235e7c1,"",%progbits
+  64 0000 789C4D90 		.ascii	"x\234M\220\277KBQ\024\307\357\367\276\227\212 \264'"
+  64      BF4B4251 
+  64      14C7EFF7 
+  64      BE978A20 
+  64      B427
+  65 0012 D12A9406 		.ascii	"\321*\224\006\365\017D\205K\201\344*H\350#\\\024\314"
+  65      F50F4485 
+  65      4B81E42A 
+  65      48E8235C 
+  65      14CC
+  66 0024 5ABDFE78 		.ascii	"Z\275\376x\245KX\241C\020R\213\366\323\032\212lzJmQ"
+  66      A54B58A1 
+  66      4310528B 
+  66      F6D31A8A 
+  66      6C7A4A6D 
+  67 0039 5335B444 		.ascii	"S5\264D\203\2034(\324\250v\356s\351\302\345\334\373"
+  67      83833428 
+  67      D4A876EE 
+  67      73E9C2E5 
+  67      DCFB
+  68 004b 3DE79ECF 		.ascii	"=\347\236\317\367\\\225\201\311\345\245\340\2468F\033"
+  68      F75C9581 
+  68      C9E5A5E0 
+  68      A638461B 
+  69 005b 0A032F3C 		.ascii	"\012\003/<3\226\262q@\036\204\015,\311\221\304/\357"
+  69      3396B271 
+  69      401E840D 
+  69      2CC991C4 
+  69      2FEF
+  70 006d 7134B75B 		.ascii	"q4\267[u\356\252\010Z\237\217\355iQ5\240+\214\015\270"
+  70      75EEAA08 
+  70      5A9F8FED 
+  70      695135A0 
+  70      2B8C0DB8 
+  71 0081 D989A102 		.ascii	"\331\211\241\002\027\243\262\257\353~\321a\311\312\262"
+  71      17A3B2AF 
+  71      EB7ED161 
+  71      C9CAB2
+  72 0090 89611255 		.ascii	"\211a\022UX$\256\266b\210\301 #\214wKc\317\252r\246"
+  72      5824AEB6 
+  72      6288C120 
+  72      238C774B 
+  72      63CFAA72 
+  73 00a5 2B2477A8 		.ascii	"+$w\250D\302\272\234\313\250\264\220\276\357\2765\034"
+  73      44C2BA9C 
+  73      CBA8B490 
+  73      BEEFBE35 
+  73      1C
+  74 00b6 F2554691 		.ascii	"\362UF\221\340\222\336|\261\376p]\341\220\200z\375\373"
+  74      E092DE7C 
+  74      B1FE705D 
+ARM GAS  C:\Users\unyacat\AppData\Local\Temp\ccqniSF6.s 			page 5
+
+
+  74      E190807A 
+  74      FDFB
+  75 00c8 C39AEC89 		.ascii	"\303\232\354\211\234\020\243\244\345\311\203\224\333"
+  75      9C10A3A4 
+  75      E5C98394 
+  75      DB
+  76 00d5 4FAF0FF6 		.ascii	"O\257\017\3662\016S\302\324\025\234\222\361\0238\315"
+  76      320E53C2 
+  76      D4159C92 
+  76      F11338CD 
+  77 00e5 E4CEDD55 		.ascii	"\344\316\335U\336\346\231\322\025\025g(\243oz\3069<"
+  77      DEE699D2 
+  77      15156728 
+  77      A36F7AC6 
+  77      393C
+  78 00f7 AC8566E9 		.ascii	"\254\205f\351h\\\302\376\223FLR\357\266v`\037^s[\005"
+  78      685CC2FE 
+  78      93464C52 
+  78      EFB67660 
+  78      1F5E735B 
+  79 010c A1927473 		.ascii	"\241\222ts\274[\204\244d\2113C\023Xp\011'.$\0075\312"
+  79      BC5B84A4 
+  79      64893343 
+  79      13587009 
+  79      272E2407 
+  80 0122 9065D646 		.ascii	"\220e\326F\332\330\367\312\236\346\317t\3107MF\314I"
+  80      DAD8F7CA 
+  80      9EE6CF74 
+  80      C8374D46 
+  80      CC49
+  81 0134 AF16D5E2 		.ascii	"\257\026\325\342\253\011-\034\364\3076\342!-\340\363"
+  81      AB092D1C 
+  81      F4C736E2 
+  81      212DE0F3 
+  82 0144 C7E66703 		.ascii	"\307\346g\003s\341M-\236\210\254G\242k\301\245\305\205"
+  82      73E14D2D 
+  82      9E88AC47 
+  82      A26BC1A5 
+  82      C585
+  83 0156 A06FD91D 		.ascii	"\240o\331\035b\177\263u\202\010"
+  83      627FB375 
+  83      8208
+  84              		.text
+  85              		.section	.gnu.lto_.symbol_nodes.9235e7c1,"",%progbits
+  86 0000 789C6361 		.ascii	"x\234ca`d\320a\000\002&\306z\006\206\011\347\030\030"
+  86      6064D061 
+  86      000226C6 
+  86      7A068609 
+  86      E71818
+  87 0013 80D4AE06 		.ascii	"\200\324\256\006E\006\006V\006\206\006!\006\006f&\246"
+  87      45060656 
+  87      06860621 
+  87      06066626 
+  87      A6
+  88 0024 7A461409 		.ascii	"zF\024\011\006\000\276o\010B"
+  88      0600BE6F 
+  88      0842
+ARM GAS  C:\Users\unyacat\AppData\Local\Temp\ccqniSF6.s 			page 6
+
+
+  89              		.text
+  90              		.section	.gnu.lto_.refs.9235e7c1,"",%progbits
+  91 0000 789C6361 		.ascii	"x\234ca`d\340f`\000\222\214\214L\214L@\222\001\000\001"
+  91      6064E066 
+  91      6000928C 
+  91      8C4C8C4C 
+  91      40920100 
+  92 0015 54001B   		.ascii	"T\000\033"
+  93              		.text
+  94              		.section	.gnu.lto_.decls.9235e7c1,"",%progbits
+  95 0000 789C8D54 		.ascii	"x\234\215ToHSQ\024\277\347\275M\347cM\310\212>\024X"
+  95      6F485351 
+  95      14BFE7BD 
+  95      4DE7634D 
+  95      C88A3E14 
+  96 0015 AC340843 		.ascii	"\2544\010C\353C\037++\203\376 M\353K :\037&\205\016"
+  96      EB431F2B 
+  96      2B83FE20 
+  96      4DEB4B20 
+  96      3A1F2685 
+  97 002a DD0221E2 		.ascii	"\335\002!\342\332?+\210\354\017\253\226\321((\313?\233"
+  97      DA3F2B88 
+  97      EC0FAB96 
+  97      D12828CB 
+  97      3F9B
+  98 003c FD594E53 		.ascii	"\375YNS\227Y\351\242\017\226\004\"\325\"\244\242\372"
+  98      9759E9A2 
+  98      0F960422 
+  98      D522A4A2 
+  98      FA
+  99 004d 500A5161 		.ascii	"P\012Qav\356\275o{kitx\347\335{\316=\277\3379\367\334"
+  99      76EEBD6F 
+  99      7B6B6974 
+  99      78E7DD7B 
+  99      CE3DBFDF 
+ 100 0064 FB9E8100 		.ascii	"\373\236\201\000a\222g$\304\214\323q\234O\242\030p\334"
+ 100      61926724 
+ 100      C48CD371 
+ 100      9C4FA218 
+ 100      70DC
+ 101 0076 46749150 		.ascii	"Ft\221P[P}\250\014\321G\376\024\266\226\254a2P\007P"
+ 101      5B507DA8 
+ 101      0CD147FE 
+ 101      14B696AC 
+ 101      61325007 
+ 102 008b 1FA38651 		.ascii	"\037\243\206Q{Q\3335\\\2676\266L\303\323\247\345\312"
+ 102      7B51DB35 
+ 102      5CB736B6 
+ 102      4CC3D3A7 
+ 102      E5CA
+ 103 009d D070B286 		.ascii	"\320p\262\206\351A\275G\246\026_B\356\370\234\321:\342"
+ 103      E941BD47 
+ 103      A6165F42 
+ 103      EEF89CD1 
+ 103      3AE2
+ 104 00af 734FB787 		.ascii	"sO\267\207\011\011\032\237\217Qe\004\206A&Zc\010\200"
+ 104      09091A9F 
+ARM GAS  C:\Users\unyacat\AppData\Local\Temp\ccqniSF6.s 			page 7
+
+
+ 104      8F516504 
+ 104      8641265A 
+ 104      630880
+ 105 00c2 78035722 		.ascii	"x\003W\"\224\2338\221\210\230D]1! V$\315Kt2\376hx\230"
+ 105      949B3891 
+ 105      8898445D 
+ 105      31212056 
+ 105      24CD4B74 
+ 106 00db 8C0A27D1 		.ascii	"\214\012'\321\331A\003A\254\002\276,@\020c\025\203\244"
+ 106      D9410341 
+ 106      AC02BE2C 
+ 106      40106315 
+ 106      83A4
+ 107 00ed 23E2F812 		.ascii	"#\342\370\022*\212\326\034M\303\333\3147\335=t\254\336"
+ 107      2A8AD61C 
+ 107      4DC3DBCC 
+ 107      37DD3D74 
+ 107      ACDE
+ 108 00ff 224BC0E6 		.ascii	"\"K\300\346\257\2777\256\317j\246(\365\224J+\365\316"
+ 108      AFBF37AE 
+ 108      CF6AA628 
+ 108      F5944A2B 
+ 108      F5CE
+ 109 0111 0C1EF437 		.ascii	"\014\036\3647\310\343\022\314T\300\200\346\227\247\236"
+ 109      C8E312CC 
+ 109      54C080E6 
+ 109      97A79E
+ 110 0120 B7163467 		.ascii	"\267\0264g)\220\216\346\304\300\005\2174\327\315q\007"
+ 110      29908EE6 
+ 110      C4C0058F 
+ 110      34D7CD71 
+ 110      07
+ 111 0131 68BA01B6 		.ascii	"h\272\001\266\315\201&\230\0077`\036\346k\206\271\370"
+ 111      CD812698 
+ 111      0737601E 
+ 111      E66B86B9 
+ 111      F8
+ 112 0142 2E3108A6 		.ascii	".1\010\246\317\337\272\374\251\013\275\324\353\247\221"
+ 112      CFDFBAFC 
+ 112      A90BBDD4 
+ 112      EBA791
+ 113 0151 D35F72CE 		.ascii	"\323_r\316\323\320A\204I,\012\032A\206\353\220\305\212"
+ 113      D3D04184 
+ 113      492C0A1A 
+ 113      4186EB90 
+ 113      C58A
+ 114 0163 6C646740 		.ascii	"ldg@\340\032\214`\275-\260\020\221'\374\3561Y\336\302"
+ 114      E01A8C60 
+ 114      BD2DB010 
+ 114      9127FCEE 
+ 114      3159DEC2 
+ 115 0177 0B1DAD9B 		.ascii	"\013\035\255\233\370e\021,\241\241GfZ_K\351*\316\321"
+ 115      F865112C 
+ 115      A1A14766 
+ 115      5A5F4BE9 
+ 115      2ACED1
+ 116 018a AA73B4C6 		.ascii	"\252s\264\306s\370\004\307\331I\232$\253\234\343\347"
+ARM GAS  C:\Users\unyacat\AppData\Local\Temp\ccqniSF6.s 			page 8
+
+
+ 116      73F804C7 
+ 116      D9499A24 
+ 116      AB9CE3E7 
+ 117 019a FB33C320 		.ascii	"\3733\303 \366dFs\177\347\360\311T\261\247\010[\366"
+ 117      F6644673 
+ 117      7FE7F0C9 
+ 117      54B1A708 
+ 117      5BF6
+ 118 01ac 748E878D 		.ascii	"t\216\207\215b\331\204\346\310`\340\215,\357\345\310"
+ 118      62D984E6 
+ 118      C860E08D 
+ 118      2CEFE5C8 
+ 119 01bc 97FDD79B 		.ascii	"\227\375\327\233X72\024~\202\251\350\362}\012~\237!"
+ 119      58373214 
+ 119      7E82A9E8 
+ 119      F27D0A7E 
+ 119      9F21
+ 120 01ce 5C2C22FC 		.ascii	"\\,\"\374z\364k\212|\010\230!\005\256\\\0323\202\222"
+ 120      7AF46B8A 
+ 120      7C089821 
+ 120      05AE5C1A 
+ 120      338292
+ 121 01e1 7984D2FD 		.ascii	"y\204\322\375\254A3\373-$\326\037\010B&C\261\232!\200"
+ 121      AC4133FB 
+ 121      2D24D61F 
+ 121      08422643 
+ 121      B19A2180 
+ 122 01f5 CE3BE8BC 		.ascii	"\316;\350\274\312Z\031\011\206\367\235\255c\275i\007"
+ 122      CA5A1909 
+ 122      86F79DAD 
+ 122      63BD6907 
+ 123 0205 05EEEAFB 		.ascii	"\005\356\352\373\312PD+/\377p\277S\344V\236\004\274"
+ 123      CA50442B 
+ 123      2FFF70BF 
+ 123      53E4569E 
+ 123      04BC
+ 124 0217 E10F8329 		.ascii	"\341\017\203)r\200\033\306\213\324\0230\2025\315j\315"
+ 124      72801BC6 
+ 124      8BD41330 
+ 124      8235CD6A 
+ 124      CD
+ 125 0228 BCCC9246 		.ascii	"\274\314\222F&\237,n\270I\351\321$\316\325\211\\]\220"
+ 125      269F2C6E 
+ 125      B849E9D1 
+ 125      24CED589 
+ 125      5C5D90
+ 126 023b A6D7708B 		.ascii	"\246\327p\213\037T6\276\310I\355\364)8\011\334\304\200"
+ 126      1F5436BE 
+ 126      C849EDF4 
+ 126      293809DC 
+ 126      C480
+ 127 024d 36BEC6C2 		.ascii	"6\276\306\3021=\204\260\332n\260B\017\352=\260\362\373"
+ 127      313D84B0 
+ 127      DA6EB042 
+ 127      0FEA3DB0 
+ 127      F2FB
+ 128 025f C15384DC 		.ascii	"\301S\204\334j\224\276#\221~Y\214]\204\236\213\205\336"
+ARM GAS  C:\Users\unyacat\AppData\Local\Temp\ccqniSF6.s 			page 9
+
+
+ 128      6A94BE23 
+ 128      917E598C 
+ 128      5D849E8B 
+ 128      85DE
+ 129 0271 9E32B489 		.ascii	"\2362\264\211\245\024M\010\235V)5\261\030\242m_\273"
+ 129      A5144D08 
+ 129      9D562935 
+ 129      B118A26D 
+ 129      5FBB
+ 130 0283 91EF5F7C 		.ascii	"\221\357_|\362\202\374At\270\355\353\341\343)\220\226"
+ 130      F282FC41 
+ 130      74B8EDEB 
+ 130      E1E32990 
+ 130      96
+ 131 0294 3965F1F0 		.ascii	"9e\361\360\000k\376W\375\"\321\305\031\330\351^\014"
+ 131      006BFE57 
+ 131      FD22D1C5 
+ 131      19D8E95E 
+ 131      0C
+ 132 02a5 BBAF779A 		.ascii	"\273\257w\232\245\345\331\206\333\203\221\224EW(\365"
+ 132      A5E5D986 
+ 132      DB839194 
+ 132      455728F5 
+ 133 02b5 E2AD6DAB 		.ascii	"\342\255m\2539C\351\006\036\353\027\261q\215b\236\002"
+ 133      3943E906 
+ 133      1EEB17B1 
+ 133      718D629E 
+ 133      02
+ 134 02c6 FC31F4C1 		.ascii	"\3741\364\301\"\304u4\373\316\311\012\036\374\201\377"
+ 134      22C47534 
+ 134      FBCEC90A 
+ 134      1EFC81FF 
+ 135 02d6 3B780679 		.ascii	";x\006yE\033\214r\035\377 \245`\373\307f\213\270:S0"
+ 135      451B8C72 
+ 135      1DFF20A5 
+ 135      60FBC766 
+ 135      8BB83A53 
+ 136 02eb F4FFE3EA 		.ascii	"\364\377\343\352\224yN\325\322tx\214M~\244o\350!hw'"
+ 136      94794ED5 
+ 136      D274788C 
+ 136      4D7EA46F 
+ 136      E8216877 
+ 137 0300 D03F7827 		.ascii	"\320?x'\331|L\277\221<R\377h\007\300\314\177\026\003"
+ 137      D97C4CBF 
+ 137      913C52FF 
+ 137      6807C0CC 
+ 137      7F1603
+ 138 0313 FCDB708F 		.ascii	"\374\333p\217>\013&\375\021\335\033wh\004\302Z4\033"
+ 138      3E0B26FD 
+ 138      11DD1B77 
+ 138      6804C25A 
+ 138      341B
+ 139 0325 67AF2EDD 		.ascii	"g\257.\335\243V9\313\253\313+\312\2126\255[[d\333\255"
+ 139      A35639CB 
+ 139      ABCB2BCA 
+ 139      8A36AD5B 
+ 139      5B64DBAD 
+ARM GAS  C:\Users\unyacat\AppData\Local\Temp\ccqniSF6.s 			page 10
+
+
+ 140 0339 AA0E53DE 		.ascii	"\252\016S\336\226\302\364\334\354l\2624O\255P\253\212"
+ 140      96C2F4DC 
+ 140      EC6CB234 
+ 140      4FAD50AB 
+ 140      8A
+ 141 034a 9D6A6991 		.ascii	"\235ji\221\255\322UeWw\344\333*sW\354HD\345o\316\262"
+ 141      ADD25565 
+ 141      5777E4DB 
+ 141      2A7357EC 
+ 141      4844E56F 
+ 142 0360 933989DE 		.ascii	"\2239\211\336\355\305\273T\227\343/wI\261}\227\313a"
+ 142      EDC5BB54 
+ 142      97E32F77 
+ 142      49B17D97 
+ 142      CB61
+ 143 0372 AA2EAFB4 		.ascii	"\252.\257\2649\221:\311U^\341\\\236\263`\232T\366\032"
+ 143      39913AC9 
+ 143      555EE15C 
+ 143      9EB3609A 
+ 143      54F61A
+ 144 0385 678D43AD 		.ascii	"g\215C\255\316\332I\222\035v\0160\271\252K\370d\311"
+ 144      CEDA4992 
+ 144      1D760E30 
+ 144      B9AA4BF8 
+ 144      64C9
+ 145 0397 FF5587D0 		.ascii	"\377U\207\320\371\2115\254Y\235\273\2610\277\310V\260"
+ 145      F98935AC 
+ 145      599DBBB1 
+ 145      30BFC856 
+ 145      B0
+ 146 03a8 B530B7C0 		.ascii	"\2650\267\300X\245\226-\317\371\015\220\214\331i"
+ 146      58A5962D 
+ 146      CFF90D90 
+ 146      8CD969
+ 147              		.text
+ 148              		.section	.gnu.lto_.symtab.9235e7c1,"",%progbits
+ 149 0000 41647665 		.ascii	"Advertising_LED_Sleep\000"
+ 149      72746973 
+ 149      696E675F 
+ 149      4C45445F 
+ 149      536C6565 
+ 150 0016 00       		.ascii	"\000"
+ 151 0017 00       		.ascii	"\000"
+ 152 0018 00       		.ascii	"\000"
+ 153 0019 00000000 		.ascii	"\000\000\000\000\000\000\000\000"
+ 153      00000000 
+ 154 0021 AD000000 		.ascii	"\255\000\000\000"
+ 155 0025 41647665 		.ascii	"Advertising_LED_Wakeup\000"
+ 155      72746973 
+ 155      696E675F 
+ 155      4C45445F 
+ 155      57616B65 
+ 156 003c 00       		.ascii	"\000"
+ 157 003d 00       		.ascii	"\000"
+ 158 003e 00       		.ascii	"\000"
+ 159 003f 00000000 		.ascii	"\000\000\000\000\000\000\000\000"
+ 159      00000000 
+ARM GAS  C:\Users\unyacat\AppData\Local\Temp\ccqniSF6.s 			page 11
+
+
+ 160 0047 AF000000 		.ascii	"\257\000\000\000"
+ 161              		.text
+ 162              		.section	.gnu.lto_.opts,"",%progbits
+ 163 0000 272D666D 		.ascii	"'-fmath-errno' '-fsigned-zeros' '-ftrapping-math' '"
+ 163      6174682D 
+ 163      6572726E 
+ 163      6F272027 
+ 163      2D667369 
+ 164 0033 2D666E6F 		.ascii	"-fno-trapv' '-fno-openmp' '-fno-openacc' '-mcpu=cor"
+ 164      2D747261 
+ 164      70762720 
+ 164      272D666E 
+ 164      6F2D6F70 
+ 165 0066 7465782D 		.ascii	"tex-m0' '-mthumb' '-g' '-O3' '-ffunction-sections' "
+ 165      6D302720 
+ 165      272D6D74 
+ 165      68756D62 
+ 165      2720272D 
+ 166 0099 272D6666 		.ascii	"'-ffat-lto-objects' '-finline-functions' '-flto'\000"
+ 166      61742D6C 
+ 166      746F2D6F 
+ 166      626A6563 
+ 166      74732720 
+ 167              		.text
+ 168              		.cfi_sections	.debug_frame
+ 169              		.section	.text.Advertising_LED_Sleep,"ax",%progbits
+ 170              		.align	2
+ 171              		.global	Advertising_LED_Sleep
+ 172              		.code	16
+ 173              		.thumb_func
+ 174              		.type	Advertising_LED_Sleep, %function
+ 175              	Advertising_LED_Sleep:
+ 176              	.LFB0:
+ 177              		.file 1 "Generated_Source\\PSoC4\\Advertising_LED_PM.c"
+   1:Generated_Source\PSoC4/Advertising_LED_PM.c **** /*******************************************************************************
+   2:Generated_Source\PSoC4/Advertising_LED_PM.c **** * File Name: Advertising_LED.c  
+   3:Generated_Source\PSoC4/Advertising_LED_PM.c **** * Version 2.20
+   4:Generated_Source\PSoC4/Advertising_LED_PM.c **** *
+   5:Generated_Source\PSoC4/Advertising_LED_PM.c **** * Description:
+   6:Generated_Source\PSoC4/Advertising_LED_PM.c **** *  This file contains APIs to set up the Pins component for low power modes.
+   7:Generated_Source\PSoC4/Advertising_LED_PM.c **** *
+   8:Generated_Source\PSoC4/Advertising_LED_PM.c **** * Note:
+   9:Generated_Source\PSoC4/Advertising_LED_PM.c **** *
+  10:Generated_Source\PSoC4/Advertising_LED_PM.c **** ********************************************************************************
+  11:Generated_Source\PSoC4/Advertising_LED_PM.c **** * Copyright 2015, Cypress Semiconductor Corporation.  All rights reserved.
+  12:Generated_Source\PSoC4/Advertising_LED_PM.c **** * You may use this file only in accordance with the license, terms, conditions, 
+  13:Generated_Source\PSoC4/Advertising_LED_PM.c **** * disclaimers, and limitations in the end user license agreement accompanying 
+  14:Generated_Source\PSoC4/Advertising_LED_PM.c **** * the software package with which this file was provided.
+  15:Generated_Source\PSoC4/Advertising_LED_PM.c **** *******************************************************************************/
+  16:Generated_Source\PSoC4/Advertising_LED_PM.c **** 
+  17:Generated_Source\PSoC4/Advertising_LED_PM.c **** #include "cytypes.h"
+  18:Generated_Source\PSoC4/Advertising_LED_PM.c **** #include "Advertising_LED.h"
+  19:Generated_Source\PSoC4/Advertising_LED_PM.c **** 
+  20:Generated_Source\PSoC4/Advertising_LED_PM.c **** static Advertising_LED_BACKUP_STRUCT  Advertising_LED_backup = {0u, 0u, 0u};
+  21:Generated_Source\PSoC4/Advertising_LED_PM.c **** 
+  22:Generated_Source\PSoC4/Advertising_LED_PM.c **** 
+  23:Generated_Source\PSoC4/Advertising_LED_PM.c **** /*******************************************************************************
+ARM GAS  C:\Users\unyacat\AppData\Local\Temp\ccqniSF6.s 			page 12
+
+
+  24:Generated_Source\PSoC4/Advertising_LED_PM.c **** * Function Name: Advertising_LED_Sleep
+  25:Generated_Source\PSoC4/Advertising_LED_PM.c **** ****************************************************************************//**
+  26:Generated_Source\PSoC4/Advertising_LED_PM.c **** *
+  27:Generated_Source\PSoC4/Advertising_LED_PM.c **** * \brief Stores the pin configuration and prepares the pin for entering chip 
+  28:Generated_Source\PSoC4/Advertising_LED_PM.c **** *  deep-sleep/hibernate modes. This function applies only to SIO and USBIO pins.
+  29:Generated_Source\PSoC4/Advertising_LED_PM.c **** *  It should not be called for GPIO or GPIO_OVT pins.
+  30:Generated_Source\PSoC4/Advertising_LED_PM.c **** *
+  31:Generated_Source\PSoC4/Advertising_LED_PM.c **** * <b>Note</b> This function is available in PSoC 4 only.
+  32:Generated_Source\PSoC4/Advertising_LED_PM.c **** *
+  33:Generated_Source\PSoC4/Advertising_LED_PM.c **** * \return 
+  34:Generated_Source\PSoC4/Advertising_LED_PM.c **** *  None 
+  35:Generated_Source\PSoC4/Advertising_LED_PM.c **** *  
+  36:Generated_Source\PSoC4/Advertising_LED_PM.c **** * \sideeffect
+  37:Generated_Source\PSoC4/Advertising_LED_PM.c **** *  For SIO pins, this function configures the pin input threshold to CMOS and
+  38:Generated_Source\PSoC4/Advertising_LED_PM.c **** *  drive level to Vddio. This is needed for SIO pins when in device 
+  39:Generated_Source\PSoC4/Advertising_LED_PM.c **** *  deep-sleep/hibernate modes.
+  40:Generated_Source\PSoC4/Advertising_LED_PM.c **** *
+  41:Generated_Source\PSoC4/Advertising_LED_PM.c **** * \funcusage
+  42:Generated_Source\PSoC4/Advertising_LED_PM.c **** *  \snippet Advertising_LED_SUT.c usage_Advertising_LED_Sleep_Wakeup
+  43:Generated_Source\PSoC4/Advertising_LED_PM.c **** *******************************************************************************/
+  44:Generated_Source\PSoC4/Advertising_LED_PM.c **** void Advertising_LED_Sleep(void)
+  45:Generated_Source\PSoC4/Advertising_LED_PM.c **** {
+ 178              		.loc 1 45 0
+ 179              		.cfi_startproc
+ 180              		@ args = 0, pretend = 0, frame = 0
+ 181              		@ frame_needed = 0, uses_anonymous_args = 0
+ 182              		@ link register save eliminated.
+  46:Generated_Source\PSoC4/Advertising_LED_PM.c ****     #if defined(Advertising_LED__PC)
+  47:Generated_Source\PSoC4/Advertising_LED_PM.c ****         Advertising_LED_backup.pcState = Advertising_LED_PC;
+ 183              		.loc 1 47 0
+ 184 0000 024B     		ldr	r3, .L2
+  48:Generated_Source\PSoC4/Advertising_LED_PM.c ****     #else
+  49:Generated_Source\PSoC4/Advertising_LED_PM.c ****         #if (CY_PSOC4_4200L)
+  50:Generated_Source\PSoC4/Advertising_LED_PM.c ****             /* Save the regulator state and put the PHY into suspend mode */
+  51:Generated_Source\PSoC4/Advertising_LED_PM.c ****             Advertising_LED_backup.usbState = Advertising_LED_CR1_REG;
+  52:Generated_Source\PSoC4/Advertising_LED_PM.c ****             Advertising_LED_USB_POWER_REG |= Advertising_LED_USBIO_ENTER_SLEEP;
+  53:Generated_Source\PSoC4/Advertising_LED_PM.c ****             Advertising_LED_CR1_REG &= Advertising_LED_USBIO_CR1_OFF;
+  54:Generated_Source\PSoC4/Advertising_LED_PM.c ****         #endif
+  55:Generated_Source\PSoC4/Advertising_LED_PM.c ****     #endif
+  56:Generated_Source\PSoC4/Advertising_LED_PM.c ****     #if defined(CYIPBLOCK_m0s8ioss_VERSION) && defined(Advertising_LED__SIO)
+  57:Generated_Source\PSoC4/Advertising_LED_PM.c ****         Advertising_LED_backup.sioState = Advertising_LED_SIO_REG;
+  58:Generated_Source\PSoC4/Advertising_LED_PM.c ****         /* SIO requires unregulated output buffer and single ended input buffer */
+  59:Generated_Source\PSoC4/Advertising_LED_PM.c ****         Advertising_LED_SIO_REG &= (uint32)(~Advertising_LED_SIO_LPM_MASK);
+  60:Generated_Source\PSoC4/Advertising_LED_PM.c ****     #endif  
+  61:Generated_Source\PSoC4/Advertising_LED_PM.c **** }
+ 185              		.loc 1 61 0
+ 186              		@ sp needed
+  47:Generated_Source\PSoC4/Advertising_LED_PM.c ****     #else
+ 187              		.loc 1 47 0
+ 188 0002 1A68     		ldr	r2, [r3]
+ 189 0004 024B     		ldr	r3, .L2+4
+ 190 0006 1A60     		str	r2, [r3]
+ 191              		.loc 1 61 0
+ 192 0008 7047     		bx	lr
+ 193              	.L3:
+ 194 000a C046     		.align	2
+ 195              	.L2:
+ARM GAS  C:\Users\unyacat\AppData\Local\Temp\ccqniSF6.s 			page 13
+
+
+ 196 000c 08030440 		.word	1074004744
+ 197 0010 00000000 		.word	.LANCHOR0
+ 198              		.cfi_endproc
+ 199              	.LFE0:
+ 200              		.size	Advertising_LED_Sleep, .-Advertising_LED_Sleep
+ 201              		.section	.text.Advertising_LED_Wakeup,"ax",%progbits
+ 202              		.align	2
+ 203              		.global	Advertising_LED_Wakeup
+ 204              		.code	16
+ 205              		.thumb_func
+ 206              		.type	Advertising_LED_Wakeup, %function
+ 207              	Advertising_LED_Wakeup:
+ 208              	.LFB1:
+  62:Generated_Source\PSoC4/Advertising_LED_PM.c **** 
+  63:Generated_Source\PSoC4/Advertising_LED_PM.c **** 
+  64:Generated_Source\PSoC4/Advertising_LED_PM.c **** /*******************************************************************************
+  65:Generated_Source\PSoC4/Advertising_LED_PM.c **** * Function Name: Advertising_LED_Wakeup
+  66:Generated_Source\PSoC4/Advertising_LED_PM.c **** ****************************************************************************//**
+  67:Generated_Source\PSoC4/Advertising_LED_PM.c **** *
+  68:Generated_Source\PSoC4/Advertising_LED_PM.c **** * \brief Restores the pin configuration that was saved during Pin_Sleep(). This 
+  69:Generated_Source\PSoC4/Advertising_LED_PM.c **** * function applies only to SIO and USBIO pins. It should not be called for
+  70:Generated_Source\PSoC4/Advertising_LED_PM.c **** * GPIO or GPIO_OVT pins.
+  71:Generated_Source\PSoC4/Advertising_LED_PM.c **** *
+  72:Generated_Source\PSoC4/Advertising_LED_PM.c **** * For USBIO pins, the wakeup is only triggered for falling edge interrupts.
+  73:Generated_Source\PSoC4/Advertising_LED_PM.c **** *
+  74:Generated_Source\PSoC4/Advertising_LED_PM.c **** * <b>Note</b> This function is available in PSoC 4 only.
+  75:Generated_Source\PSoC4/Advertising_LED_PM.c **** *
+  76:Generated_Source\PSoC4/Advertising_LED_PM.c **** * \return 
+  77:Generated_Source\PSoC4/Advertising_LED_PM.c **** *  None
+  78:Generated_Source\PSoC4/Advertising_LED_PM.c **** *  
+  79:Generated_Source\PSoC4/Advertising_LED_PM.c **** * \funcusage
+  80:Generated_Source\PSoC4/Advertising_LED_PM.c **** *  Refer to Advertising_LED_Sleep() for an example usage.
+  81:Generated_Source\PSoC4/Advertising_LED_PM.c **** *******************************************************************************/
+  82:Generated_Source\PSoC4/Advertising_LED_PM.c **** void Advertising_LED_Wakeup(void)
+  83:Generated_Source\PSoC4/Advertising_LED_PM.c **** {
+ 209              		.loc 1 83 0
+ 210              		.cfi_startproc
+ 211              		@ args = 0, pretend = 0, frame = 0
+ 212              		@ frame_needed = 0, uses_anonymous_args = 0
+ 213              		@ link register save eliminated.
+  84:Generated_Source\PSoC4/Advertising_LED_PM.c ****     #if defined(Advertising_LED__PC)
+  85:Generated_Source\PSoC4/Advertising_LED_PM.c ****         Advertising_LED_PC = Advertising_LED_backup.pcState;
+ 214              		.loc 1 85 0
+ 215 0000 024B     		ldr	r3, .L5
+  86:Generated_Source\PSoC4/Advertising_LED_PM.c ****     #else
+  87:Generated_Source\PSoC4/Advertising_LED_PM.c ****         #if (CY_PSOC4_4200L)
+  88:Generated_Source\PSoC4/Advertising_LED_PM.c ****             /* Restore the regulator state and come out of suspend mode */
+  89:Generated_Source\PSoC4/Advertising_LED_PM.c ****             Advertising_LED_USB_POWER_REG &= Advertising_LED_USBIO_EXIT_SLEEP_PH1;
+  90:Generated_Source\PSoC4/Advertising_LED_PM.c ****             Advertising_LED_CR1_REG = Advertising_LED_backup.usbState;
+  91:Generated_Source\PSoC4/Advertising_LED_PM.c ****             Advertising_LED_USB_POWER_REG &= Advertising_LED_USBIO_EXIT_SLEEP_PH2;
+  92:Generated_Source\PSoC4/Advertising_LED_PM.c ****         #endif
+  93:Generated_Source\PSoC4/Advertising_LED_PM.c ****     #endif
+  94:Generated_Source\PSoC4/Advertising_LED_PM.c ****     #if defined(CYIPBLOCK_m0s8ioss_VERSION) && defined(Advertising_LED__SIO)
+  95:Generated_Source\PSoC4/Advertising_LED_PM.c ****         Advertising_LED_SIO_REG = Advertising_LED_backup.sioState;
+  96:Generated_Source\PSoC4/Advertising_LED_PM.c ****     #endif
+  97:Generated_Source\PSoC4/Advertising_LED_PM.c **** }
+ 216              		.loc 1 97 0
+ARM GAS  C:\Users\unyacat\AppData\Local\Temp\ccqniSF6.s 			page 14
+
+
+ 217              		@ sp needed
+  85:Generated_Source\PSoC4/Advertising_LED_PM.c ****     #else
+ 218              		.loc 1 85 0
+ 219 0002 1A68     		ldr	r2, [r3]
+ 220 0004 024B     		ldr	r3, .L5+4
+ 221 0006 1A60     		str	r2, [r3]
+ 222              		.loc 1 97 0
+ 223 0008 7047     		bx	lr
+ 224              	.L6:
+ 225 000a C046     		.align	2
+ 226              	.L5:
+ 227 000c 00000000 		.word	.LANCHOR0
+ 228 0010 08030440 		.word	1074004744
+ 229              		.cfi_endproc
+ 230              	.LFE1:
+ 231              		.size	Advertising_LED_Wakeup, .-Advertising_LED_Wakeup
+ 232              		.bss
+ 233              		.align	2
+ 234              		.set	.LANCHOR0,. + 0
+ 235              		.type	Advertising_LED_backup, %object
+ 236              		.size	Advertising_LED_backup, 12
+ 237              	Advertising_LED_backup:
+ 238 0000 00000000 		.space	12
+ 238      00000000 
+ 238      00000000 
+ 239              		.text
+ 240              	.Letext0:
+ 241              		.file 2 "Generated_Source\\PSoC4\\cytypes.h"
+ 242              		.file 3 "Generated_Source\\PSoC4\\Advertising_LED.h"
+ 243              		.section	.debug_info,"",%progbits
+ 244              	.Ldebug_info0:
+ 245 0000 05010000 		.4byte	0x105
+ 246 0004 0400     		.2byte	0x4
+ 247 0006 00000000 		.4byte	.Ldebug_abbrev0
+ 248 000a 04       		.byte	0x4
+ 249 000b 01       		.uleb128 0x1
+ 250 000c 93000000 		.4byte	.LASF20
+ 251 0010 0C       		.byte	0xc
+ 252 0011 F5010000 		.4byte	.LASF21
+ 253 0015 76010000 		.4byte	.LASF22
+ 254 0019 00000000 		.4byte	.Ldebug_ranges0+0
+ 255 001d 00000000 		.4byte	0
+ 256 0021 00000000 		.4byte	.Ldebug_line0
+ 257 0025 02       		.uleb128 0x2
+ 258 0026 01       		.byte	0x1
+ 259 0027 06       		.byte	0x6
+ 260 0028 32020000 		.4byte	.LASF0
+ 261 002c 02       		.uleb128 0x2
+ 262 002d 01       		.byte	0x1
+ 263 002e 08       		.byte	0x8
+ 264 002f 4A000000 		.4byte	.LASF1
+ 265 0033 02       		.uleb128 0x2
+ 266 0034 02       		.byte	0x2
+ 267 0035 05       		.byte	0x5
+ 268 0036 41010000 		.4byte	.LASF2
+ 269 003a 02       		.uleb128 0x2
+ 270 003b 02       		.byte	0x2
+ARM GAS  C:\Users\unyacat\AppData\Local\Temp\ccqniSF6.s 			page 15
+
+
+ 271 003c 07       		.byte	0x7
+ 272 003d 6A000000 		.4byte	.LASF3
+ 273 0041 02       		.uleb128 0x2
+ 274 0042 04       		.byte	0x4
+ 275 0043 05       		.byte	0x5
+ 276 0044 29020000 		.4byte	.LASF4
+ 277 0048 02       		.uleb128 0x2
+ 278 0049 04       		.byte	0x4
+ 279 004a 07       		.byte	0x7
+ 280 004b 58000000 		.4byte	.LASF5
+ 281 004f 02       		.uleb128 0x2
+ 282 0050 08       		.byte	0x8
+ 283 0051 05       		.byte	0x5
+ 284 0052 E2010000 		.4byte	.LASF6
+ 285 0056 02       		.uleb128 0x2
+ 286 0057 08       		.byte	0x8
+ 287 0058 07       		.byte	0x7
+ 288 0059 5F010000 		.4byte	.LASF7
+ 289 005d 03       		.uleb128 0x3
+ 290 005e 04       		.byte	0x4
+ 291 005f 05       		.byte	0x5
+ 292 0060 696E7400 		.ascii	"int\000"
+ 293 0064 02       		.uleb128 0x2
+ 294 0065 04       		.byte	0x4
+ 295 0066 07       		.byte	0x7
+ 296 0067 52010000 		.4byte	.LASF8
+ 297 006b 04       		.uleb128 0x4
+ 298 006c 4B010000 		.4byte	.LASF12
+ 299 0070 02       		.byte	0x2
+ 300 0071 FD01     		.2byte	0x1fd
+ 301 0073 48000000 		.4byte	0x48
+ 302 0077 02       		.uleb128 0x2
+ 303 0078 04       		.byte	0x4
+ 304 0079 04       		.byte	0x4
+ 305 007a 44000000 		.4byte	.LASF9
+ 306 007e 02       		.uleb128 0x2
+ 307 007f 08       		.byte	0x8
+ 308 0080 04       		.byte	0x4
+ 309 0081 3A010000 		.4byte	.LASF10
+ 310 0085 02       		.uleb128 0x2
+ 311 0086 01       		.byte	0x1
+ 312 0087 08       		.byte	0x8
+ 313 0088 F0010000 		.4byte	.LASF11
+ 314 008c 04       		.uleb128 0x4
+ 315 008d 00000000 		.4byte	.LASF13
+ 316 0091 02       		.byte	0x2
+ 317 0092 A702     		.2byte	0x2a7
+ 318 0094 98000000 		.4byte	0x98
+ 319 0098 05       		.uleb128 0x5
+ 320 0099 6B000000 		.4byte	0x6b
+ 321 009d 06       		.uleb128 0x6
+ 322 009e 0C       		.byte	0xc
+ 323 009f 03       		.byte	0x3
+ 324 00a0 21       		.byte	0x21
+ 325 00a1 CA000000 		.4byte	0xca
+ 326 00a5 07       		.uleb128 0x7
+ 327 00a6 21020000 		.4byte	.LASF14
+ARM GAS  C:\Users\unyacat\AppData\Local\Temp\ccqniSF6.s 			page 16
+
+
+ 328 00aa 03       		.byte	0x3
+ 329 00ab 23       		.byte	0x23
+ 330 00ac 6B000000 		.4byte	0x6b
+ 331 00b0 00       		.byte	0
+ 332 00b1 07       		.uleb128 0x7
+ 333 00b2 D9010000 		.4byte	.LASF15
+ 334 00b6 03       		.byte	0x3
+ 335 00b7 24       		.byte	0x24
+ 336 00b8 6B000000 		.4byte	0x6b
+ 337 00bc 04       		.byte	0x4
+ 338 00bd 07       		.uleb128 0x7
+ 339 00be 1D000000 		.4byte	.LASF16
+ 340 00c2 03       		.byte	0x3
+ 341 00c3 25       		.byte	0x25
+ 342 00c4 6B000000 		.4byte	0x6b
+ 343 00c8 08       		.byte	0x8
+ 344 00c9 00       		.byte	0
+ 345 00ca 08       		.uleb128 0x8
+ 346 00cb 26000000 		.4byte	.LASF17
+ 347 00cf 03       		.byte	0x3
+ 348 00d0 26       		.byte	0x26
+ 349 00d1 9D000000 		.4byte	0x9d
+ 350 00d5 09       		.uleb128 0x9
+ 351 00d6 7D000000 		.4byte	.LASF18
+ 352 00da 01       		.byte	0x1
+ 353 00db 2C       		.byte	0x2c
+ 354 00dc 00000000 		.4byte	.LFB0
+ 355 00e0 14000000 		.4byte	.LFE0-.LFB0
+ 356 00e4 01       		.uleb128 0x1
+ 357 00e5 9C       		.byte	0x9c
+ 358 00e6 09       		.uleb128 0x9
+ 359 00e7 06000000 		.4byte	.LASF19
+ 360 00eb 01       		.byte	0x1
+ 361 00ec 52       		.byte	0x52
+ 362 00ed 00000000 		.4byte	.LFB1
+ 363 00f1 14000000 		.4byte	.LFE1-.LFB1
+ 364 00f5 01       		.uleb128 0x1
+ 365 00f6 9C       		.byte	0x9c
+ 366 00f7 0A       		.uleb128 0xa
+ 367 00f8 3E020000 		.4byte	.LASF23
+ 368 00fc 01       		.byte	0x1
+ 369 00fd 14       		.byte	0x14
+ 370 00fe CA000000 		.4byte	0xca
+ 371 0102 05       		.uleb128 0x5
+ 372 0103 03       		.byte	0x3
+ 373 0104 00000000 		.4byte	Advertising_LED_backup
+ 374 0108 00       		.byte	0
+ 375              		.section	.debug_abbrev,"",%progbits
+ 376              	.Ldebug_abbrev0:
+ 377 0000 01       		.uleb128 0x1
+ 378 0001 11       		.uleb128 0x11
+ 379 0002 01       		.byte	0x1
+ 380 0003 25       		.uleb128 0x25
+ 381 0004 0E       		.uleb128 0xe
+ 382 0005 13       		.uleb128 0x13
+ 383 0006 0B       		.uleb128 0xb
+ 384 0007 03       		.uleb128 0x3
+ARM GAS  C:\Users\unyacat\AppData\Local\Temp\ccqniSF6.s 			page 17
+
+
+ 385 0008 0E       		.uleb128 0xe
+ 386 0009 1B       		.uleb128 0x1b
+ 387 000a 0E       		.uleb128 0xe
+ 388 000b 55       		.uleb128 0x55
+ 389 000c 17       		.uleb128 0x17
+ 390 000d 11       		.uleb128 0x11
+ 391 000e 01       		.uleb128 0x1
+ 392 000f 10       		.uleb128 0x10
+ 393 0010 17       		.uleb128 0x17
+ 394 0011 00       		.byte	0
+ 395 0012 00       		.byte	0
+ 396 0013 02       		.uleb128 0x2
+ 397 0014 24       		.uleb128 0x24
+ 398 0015 00       		.byte	0
+ 399 0016 0B       		.uleb128 0xb
+ 400 0017 0B       		.uleb128 0xb
+ 401 0018 3E       		.uleb128 0x3e
+ 402 0019 0B       		.uleb128 0xb
+ 403 001a 03       		.uleb128 0x3
+ 404 001b 0E       		.uleb128 0xe
+ 405 001c 00       		.byte	0
+ 406 001d 00       		.byte	0
+ 407 001e 03       		.uleb128 0x3
+ 408 001f 24       		.uleb128 0x24
+ 409 0020 00       		.byte	0
+ 410 0021 0B       		.uleb128 0xb
+ 411 0022 0B       		.uleb128 0xb
+ 412 0023 3E       		.uleb128 0x3e
+ 413 0024 0B       		.uleb128 0xb
+ 414 0025 03       		.uleb128 0x3
+ 415 0026 08       		.uleb128 0x8
+ 416 0027 00       		.byte	0
+ 417 0028 00       		.byte	0
+ 418 0029 04       		.uleb128 0x4
+ 419 002a 16       		.uleb128 0x16
+ 420 002b 00       		.byte	0
+ 421 002c 03       		.uleb128 0x3
+ 422 002d 0E       		.uleb128 0xe
+ 423 002e 3A       		.uleb128 0x3a
+ 424 002f 0B       		.uleb128 0xb
+ 425 0030 3B       		.uleb128 0x3b
+ 426 0031 05       		.uleb128 0x5
+ 427 0032 49       		.uleb128 0x49
+ 428 0033 13       		.uleb128 0x13
+ 429 0034 00       		.byte	0
+ 430 0035 00       		.byte	0
+ 431 0036 05       		.uleb128 0x5
+ 432 0037 35       		.uleb128 0x35
+ 433 0038 00       		.byte	0
+ 434 0039 49       		.uleb128 0x49
+ 435 003a 13       		.uleb128 0x13
+ 436 003b 00       		.byte	0
+ 437 003c 00       		.byte	0
+ 438 003d 06       		.uleb128 0x6
+ 439 003e 13       		.uleb128 0x13
+ 440 003f 01       		.byte	0x1
+ 441 0040 0B       		.uleb128 0xb
+ARM GAS  C:\Users\unyacat\AppData\Local\Temp\ccqniSF6.s 			page 18
+
+
+ 442 0041 0B       		.uleb128 0xb
+ 443 0042 3A       		.uleb128 0x3a
+ 444 0043 0B       		.uleb128 0xb
+ 445 0044 3B       		.uleb128 0x3b
+ 446 0045 0B       		.uleb128 0xb
+ 447 0046 01       		.uleb128 0x1
+ 448 0047 13       		.uleb128 0x13
+ 449 0048 00       		.byte	0
+ 450 0049 00       		.byte	0
+ 451 004a 07       		.uleb128 0x7
+ 452 004b 0D       		.uleb128 0xd
+ 453 004c 00       		.byte	0
+ 454 004d 03       		.uleb128 0x3
+ 455 004e 0E       		.uleb128 0xe
+ 456 004f 3A       		.uleb128 0x3a
+ 457 0050 0B       		.uleb128 0xb
+ 458 0051 3B       		.uleb128 0x3b
+ 459 0052 0B       		.uleb128 0xb
+ 460 0053 49       		.uleb128 0x49
+ 461 0054 13       		.uleb128 0x13
+ 462 0055 38       		.uleb128 0x38
+ 463 0056 0B       		.uleb128 0xb
+ 464 0057 00       		.byte	0
+ 465 0058 00       		.byte	0
+ 466 0059 08       		.uleb128 0x8
+ 467 005a 16       		.uleb128 0x16
+ 468 005b 00       		.byte	0
+ 469 005c 03       		.uleb128 0x3
+ 470 005d 0E       		.uleb128 0xe
+ 471 005e 3A       		.uleb128 0x3a
+ 472 005f 0B       		.uleb128 0xb
+ 473 0060 3B       		.uleb128 0x3b
+ 474 0061 0B       		.uleb128 0xb
+ 475 0062 49       		.uleb128 0x49
+ 476 0063 13       		.uleb128 0x13
+ 477 0064 00       		.byte	0
+ 478 0065 00       		.byte	0
+ 479 0066 09       		.uleb128 0x9
+ 480 0067 2E       		.uleb128 0x2e
+ 481 0068 00       		.byte	0
+ 482 0069 3F       		.uleb128 0x3f
+ 483 006a 19       		.uleb128 0x19
+ 484 006b 03       		.uleb128 0x3
+ 485 006c 0E       		.uleb128 0xe
+ 486 006d 3A       		.uleb128 0x3a
+ 487 006e 0B       		.uleb128 0xb
+ 488 006f 3B       		.uleb128 0x3b
+ 489 0070 0B       		.uleb128 0xb
+ 490 0071 27       		.uleb128 0x27
+ 491 0072 19       		.uleb128 0x19
+ 492 0073 11       		.uleb128 0x11
+ 493 0074 01       		.uleb128 0x1
+ 494 0075 12       		.uleb128 0x12
+ 495 0076 06       		.uleb128 0x6
+ 496 0077 40       		.uleb128 0x40
+ 497 0078 18       		.uleb128 0x18
+ 498 0079 9742     		.uleb128 0x2117
+ARM GAS  C:\Users\unyacat\AppData\Local\Temp\ccqniSF6.s 			page 19
+
+
+ 499 007b 19       		.uleb128 0x19
+ 500 007c 00       		.byte	0
+ 501 007d 00       		.byte	0
+ 502 007e 0A       		.uleb128 0xa
+ 503 007f 34       		.uleb128 0x34
+ 504 0080 00       		.byte	0
+ 505 0081 03       		.uleb128 0x3
+ 506 0082 0E       		.uleb128 0xe
+ 507 0083 3A       		.uleb128 0x3a
+ 508 0084 0B       		.uleb128 0xb
+ 509 0085 3B       		.uleb128 0x3b
+ 510 0086 0B       		.uleb128 0xb
+ 511 0087 49       		.uleb128 0x49
+ 512 0088 13       		.uleb128 0x13
+ 513 0089 02       		.uleb128 0x2
+ 514 008a 18       		.uleb128 0x18
+ 515 008b 00       		.byte	0
+ 516 008c 00       		.byte	0
+ 517 008d 00       		.byte	0
+ 518              		.section	.debug_aranges,"",%progbits
+ 519 0000 24000000 		.4byte	0x24
+ 520 0004 0200     		.2byte	0x2
+ 521 0006 00000000 		.4byte	.Ldebug_info0
+ 522 000a 04       		.byte	0x4
+ 523 000b 00       		.byte	0
+ 524 000c 0000     		.2byte	0
+ 525 000e 0000     		.2byte	0
+ 526 0010 00000000 		.4byte	.LFB0
+ 527 0014 14000000 		.4byte	.LFE0-.LFB0
+ 528 0018 00000000 		.4byte	.LFB1
+ 529 001c 14000000 		.4byte	.LFE1-.LFB1
+ 530 0020 00000000 		.4byte	0
+ 531 0024 00000000 		.4byte	0
+ 532              		.section	.debug_ranges,"",%progbits
+ 533              	.Ldebug_ranges0:
+ 534 0000 00000000 		.4byte	.LFB0
+ 535 0004 14000000 		.4byte	.LFE0
+ 536 0008 00000000 		.4byte	.LFB1
+ 537 000c 14000000 		.4byte	.LFE1
+ 538 0010 00000000 		.4byte	0
+ 539 0014 00000000 		.4byte	0
+ 540              		.section	.debug_line,"",%progbits
+ 541              	.Ldebug_line0:
+ 542 0000 9D000000 		.section	.debug_str,"MS",%progbits,1
+ 542      02006400 
+ 542      00000201 
+ 542      FB0E0D00 
+ 542      01010101 
+ 543              	.LASF13:
+ 544 0000 72656733 		.ascii	"reg32\000"
+ 544      3200
+ 545              	.LASF19:
+ 546 0006 41647665 		.ascii	"Advertising_LED_Wakeup\000"
+ 546      72746973 
+ 546      696E675F 
+ 546      4C45445F 
+ 546      57616B65 
+ARM GAS  C:\Users\unyacat\AppData\Local\Temp\ccqniSF6.s 			page 20
+
+
+ 547              	.LASF16:
+ 548 001d 75736253 		.ascii	"usbState\000"
+ 548      74617465 
+ 548      00
+ 549              	.LASF17:
+ 550 0026 41647665 		.ascii	"Advertising_LED_BACKUP_STRUCT\000"
+ 550      72746973 
+ 550      696E675F 
+ 550      4C45445F 
+ 550      4241434B 
+ 551              	.LASF9:
+ 552 0044 666C6F61 		.ascii	"float\000"
+ 552      7400
+ 553              	.LASF1:
+ 554 004a 756E7369 		.ascii	"unsigned char\000"
+ 554      676E6564 
+ 554      20636861 
+ 554      7200
+ 555              	.LASF5:
+ 556 0058 6C6F6E67 		.ascii	"long unsigned int\000"
+ 556      20756E73 
+ 556      69676E65 
+ 556      6420696E 
+ 556      7400
+ 557              	.LASF3:
+ 558 006a 73686F72 		.ascii	"short unsigned int\000"
+ 558      7420756E 
+ 558      7369676E 
+ 558      65642069 
+ 558      6E7400
+ 559              	.LASF18:
+ 560 007d 41647665 		.ascii	"Advertising_LED_Sleep\000"
+ 560      72746973 
+ 560      696E675F 
+ 560      4C45445F 
+ 560      536C6565 
+ 561              	.LASF20:
+ 562 0093 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
+ 562      43313120 
+ 562      352E342E 
+ 562      31203230 
+ 562      31363036 
+ 563 00c6 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m0 -mthumb -g -O"
+ 563      20726576 
+ 563      6973696F 
+ 563      6E203233 
+ 563      37373135 
+ 564 00f9 33202D66 		.ascii	"3 -ffunction-sections -ffat-lto-objects -finline-fu"
+ 564      66756E63 
+ 564      74696F6E 
+ 564      2D736563 
+ 564      74696F6E 
+ 565 012c 6E637469 		.ascii	"nctions -flto\000"
+ 565      6F6E7320 
+ 565      2D666C74 
+ 565      6F00
+ 566              	.LASF10:
+ARM GAS  C:\Users\unyacat\AppData\Local\Temp\ccqniSF6.s 			page 21
+
+
+ 567 013a 646F7562 		.ascii	"double\000"
+ 567      6C6500
+ 568              	.LASF2:
+ 569 0141 73686F72 		.ascii	"short int\000"
+ 569      7420696E 
+ 569      7400
+ 570              	.LASF12:
+ 571 014b 75696E74 		.ascii	"uint32\000"
+ 571      333200
+ 572              	.LASF8:
+ 573 0152 756E7369 		.ascii	"unsigned int\000"
+ 573      676E6564 
+ 573      20696E74 
+ 573      00
+ 574              	.LASF7:
+ 575 015f 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 575      206C6F6E 
+ 575      6720756E 
+ 575      7369676E 
+ 575      65642069 
+ 576              	.LASF22:
+ 577 0176 433A5C55 		.ascii	"C:\\Users\\unyacat\\Desktop\\Linebot\\Dynamic Broad"
+ 577      73657273 
+ 577      5C756E79 
+ 577      61636174 
+ 577      5C446573 
+ 578 01a4 63617374 		.ascii	"caster\\Dynamic Broadcaster\\Dynamic Broadcaster.cy"
+ 578      65725C44 
+ 578      796E616D 
+ 578      69632042 
+ 578      726F6164 
+ 579 01d5 64736E00 		.ascii	"dsn\000"
+ 580              	.LASF15:
+ 581 01d9 73696F53 		.ascii	"sioState\000"
+ 581      74617465 
+ 581      00
+ 582              	.LASF6:
+ 583 01e2 6C6F6E67 		.ascii	"long long int\000"
+ 583      206C6F6E 
+ 583      6720696E 
+ 583      7400
+ 584              	.LASF11:
+ 585 01f0 63686172 		.ascii	"char\000"
+ 585      00
+ 586              	.LASF21:
+ 587 01f5 47656E65 		.ascii	"Generated_Source\\PSoC4\\Advertising_LED_PM.c\000"
+ 587      72617465 
+ 587      645F536F 
+ 587      75726365 
+ 587      5C50536F 
+ 588              	.LASF14:
+ 589 0221 70635374 		.ascii	"pcState\000"
+ 589      61746500 
+ 590              	.LASF4:
+ 591 0229 6C6F6E67 		.ascii	"long int\000"
+ 591      20696E74 
+ 591      00
+ARM GAS  C:\Users\unyacat\AppData\Local\Temp\ccqniSF6.s 			page 22
+
+
+ 592              	.LASF0:
+ 593 0232 7369676E 		.ascii	"signed char\000"
+ 593      65642063 
+ 593      68617200 
+ 594              	.LASF23:
+ 595 023e 41647665 		.ascii	"Advertising_LED_backup\000"
+ 595      72746973 
+ 595      696E675F 
+ 595      4C45445F 
+ 595      6261636B 
+ 596              		.comm	__gnu_lto_v1,1,1
+ 597              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran

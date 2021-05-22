@@ -1,0 +1,21 @@
+# Dynamic Broadcaster
+# 2021-05-22 03:53:24Z
+
+# IO_6@[IOP=(0)][IoId=(6)] is reserved: SWDDebugEnabled
+dont_use_io iocell 0 6
+# IO_7@[IOP=(0)][IoId=(7)] is reserved: SWDDebugEnabled
+dont_use_io iocell 0 7
+dont_use_location LPCOMP -1 -1 0
+dont_use_location p4lpcompcell -1 -1 0
+dont_use_location LPCOMP -1 -1 1
+dont_use_location p4lpcompcell -1 -1 1
+dont_use_location mxs40_opamp -1 -1 0
+dont_use_location p4abufcell -1 -1 0
+dont_use_location mxs40_opamp -1 -1 1
+dont_use_location p4abufcell -1 -1 1
+dont_use_location mxs40_opamp -1 -1 2
+dont_use_location p4abufcell -1 -1 2
+dont_use_location mxs40_opamp -1 -1 3
+dont_use_location p4abufcell -1 -1 3
+set_location "ClockGenBlock" m0s8clockgenblockcell -1 -1 0
+set_io "Advertising_LED(0)" iocell 3 6

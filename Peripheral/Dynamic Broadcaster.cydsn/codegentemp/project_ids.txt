@@ -1,0 +1,6 @@
+C:\Users\unyacat\Desktop\Linebot\Dynamic Broadcaster\Dynamic Broadcaster\Dynamic Broadcaster.cydsn\Dynamic Broadcaster.cyprj|2b13ac17-ca65-478f-9160-955fcef5efe0
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|68fdab96-afb9-4d04-85ae-04bb64fe5cd7
+C:\Users\unyacat\Documents\PSoC Creator\4.4\Downloads ( 4.4).cylib\Downloads ( 4.4).cyprj|527bcc06-9a5a-495d-84f4-a41c666676e4
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|22cef2f6-7ce2-4b01-9b32-2d656be18ba1
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|ab6afc7d-7d2e-4ead-93e7-f098c01855fd
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|d398e629-c0a3-4d2c-83e2-f5e225f3a9d6

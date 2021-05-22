@@ -1,0 +1,25 @@
+(DELAYFILE
+ (SDFVERSION "IEEE 1497 4.0")
+ (DATE "2021-05-22T03:53:26Z")
+ (DESIGN "Dynamic Broadcaster")
+ (VENDOR "Cypress Semiconductor")
+ (PROGRAM "PSoC Creator")
+ (VERSION " 4.4")
+ (DIVIDER .)
+ (TIMESCALE 1 ns)
+ (CELL
+  (CELLTYPE "Dynamic Broadcaster")
+  (INSTANCE *)
+  (DELAY
+   (ABSOLUTE
+    (INTERCONNECT ClockBlock.hfclk Wakeup_Interrupt.clock (0.000:0.000:0.000))
+    (INTERCONNECT ClockBlock.hfclk \\BLE\:bless_isr\\.clock (0.000:0.000:0.000))
+    (INTERCONNECT Wakeup_SW.interrupt Wakeup_Interrupt.interrupt (1.000:1.000:1.000))
+    (INTERCONNECT \\BLE\:cy_m0s8_ble\\.interrupt \\BLE\:bless_isr\\.interrupt (1.000:1.000:1.000))
+    (INTERCONNECT Advertising_LED\(0\)_PAD Advertising_LED\(0\).pad_in (0.000:0.000:0.000))
+    (INTERCONNECT Hibernate_LED\(0\)_PAD Hibernate_LED\(0\).pad_in (0.000:0.000:0.000))
+    (INTERCONNECT Wakeup_SW\(0\)_PAD Wakeup_SW\(0\).pad_in (0.000:0.000:0.000))
+   )
+  )
+ )
+)

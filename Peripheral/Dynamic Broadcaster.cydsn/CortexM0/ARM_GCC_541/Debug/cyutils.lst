@@ -1,0 +1,1455 @@
+ARM GAS  C:\Users\unyacat\AppData\Local\Temp\ccnjDJTH.s 			page 1
+
+
+   1              		.syntax unified
+   2              		.cpu cortex-m0
+   3              		.fpu softvfp
+   4              		.eabi_attribute 20, 1
+   5              		.eabi_attribute 21, 1
+   6              		.eabi_attribute 23, 3
+   7              		.eabi_attribute 24, 1
+   8              		.eabi_attribute 25, 1
+   9              		.eabi_attribute 26, 1
+  10              		.eabi_attribute 30, 2
+  11              		.eabi_attribute 34, 0
+  12              		.eabi_attribute 18, 4
+  13              		.thumb
+  14              		.syntax unified
+  15              		.file	"cyutils.c"
+  16              		.text
+  17              	.Ltext0:
+  18              		.section	.gnu.lto_.profile.9235c5b9,"",%progbits
+  19 0000 789C6361 		.ascii	"x\234ca`d`a`\000\222\002|\000\000\230\000)"
+  19      60646061 
+  19      60009202 
+  19      7C000098 
+  19      0029
+  20              		.text
+  21              		.section	.gnu.lto_.icf.9235c5b9,"",%progbits
+  22 0000 789C6361 		.ascii	"x\234ca`d\000\001>\006\004`b\230\177cy\037\027\343\346"
+  22      60640001 
+  22      3E060460 
+  22      62987F63 
+  22      791F17E3 
+  23 0015 ED3BAEB3 		.ascii	"\355;\256\2631\000\000,\037\005\314"
+  23      3100002C 
+  23      1F05CC
+  24              		.text
+  25              		.section	.gnu.lto_.jmpfuncs.9235c5b9,"",%progbits
+  26 0000 789C6361 		.ascii	"x\234ca`d\000\001>\006\004`b`bdd\256\257g\004\202z\006"
+  26      60640001 
+  26      3E060460 
+  26      62606264 
+  26      64AEAF67 
+  27 0018 000B1B01 		.ascii	"\000\013\033\001\236"
+  27      9E
+  28              		.text
+  29              		.section	.gnu.lto_.inline.9235c5b9,"",%progbits
+  30 0000 789C6361 		.ascii	"x\234ca`d\000\001g\006\004`b`\340`gddT\000J13\357\020"
+  30      60640001 
+  30      67060460 
+  30      6260E060 
+  30      67646454 
+  31 001a 67E0BC61 		.ascii	"g\340\274a\306\304\300\262@\236\005$\313\310\300\305"
+  31      C6C4C0B2 
+  31      409E0524 
+  31      CBC8C0C5 
+  32 002a C9C8C8C0 		.ascii	"\311\310\310\300\301\310\300\314\300\3025\301\217\201"
+  32      C1C8C0CC 
+  32      C0C235C1 
+  32      8F81
+ARM GAS  C:\Users\unyacat\AppData\Local\Temp\ccnjDJTH.s 			page 2
+
+
+  33 0038 E3831E13 		.ascii	"\343\203\036\023\003\343\013v\026\010\0116\002\000\353"
+  33      03E30B76 
+  33      16080936 
+  33      0200EB
+  34 0047 050753   		.ascii	"\005\007S"
+  35              		.text
+  36              		.section	.gnu.lto_.pureconst.9235c5b9,"",%progbits
+  37 0000 789C6361 		.ascii	"x\234ca`d`e```b\220b\224\002\000\000\355\000B"
+  37      60646065 
+  37      60606062 
+  37      90629402 
+  37      0000ED00 
+  38              		.text
+  39              		.section	.gnu.lto_CySetReg24.9235c5b9,"",%progbits
+  40 0000 789C6591 		.ascii	"x\234e\221Mh\023A\024\307\347?\223\315f\243-^\352\305"
+  40      4D681341 
+  40      14C7E73F 
+  40      93CD66A3 
+  40      2D5EEAC5 
+  41 0014 1E225842 		.ascii	"\036\"XB.z\021\357\342\301\253\332kAB\262\007\241Z\211"
+  41      2E7A11EF 
+  41      E2C1ABDA 
+  41      6B4142B2 
+  41      07A15A89 
+  42 0028 89E0A993 		.ascii	"\211\340\251\223\217m\016\212U\324J\213%\212\224~hM"
+  42      8F6D0E8A 
+  42      55D44A8B 
+  42      258A947E 
+  42      684D
+  43 003a 63AD1FB4 		.ascii	"c\255\037\264\340\022D0\324\212_\207\334l\265U<HR\242"
+  43      E0124430 
+  43      D48A5F87 
+  43      DC6CB555 
+  43      3C4852A2 
+  44 004e 17B5F1CD 		.ascii	"\027\265\361\315l=\244\035vw\336{\374\377\357\267\363"
+  44      6C3DA41D 
+  44      7677DE7B 
+  44      FCFFEFB7 
+  44      F3
+  45 005f C6C7C0D4 		.ascii	"\306\307\300\324z\305\031;D\373\036z!\030\370\225%\306"
+  45      7AC5193B 
+  45      44FB1E7A 
+  45      2118F895 
+  45      25C6
+  46 0071 D2010EA8 		.ascii	"\322\001\016\250@\006\300\3729\372\361\223\377\345("
+  46      4006C0FA 
+  46      39FAF193 
+  46      FFE528
+  47 0080 E7D79EF1 		.ascii	"\347\327\236\361\310\270\244\365iu\260MN\270p\004cM"
+  47      C8B8A4F5 
+  47      6975B04D 
+  47      4EB87004 
+  47      634D
+  48 0092 AE3B318C 		.ascii	"\256;1\214#B\252\267\271\231[\242\301\035\001\370(\255"
+  48      2342AAB7 
+  48      B9995BA2 
+  48      C11D01F8 
+ARM GAS  C:\Users\unyacat\AppData\Local\Temp\ccnjDJTH.s 			page 3
+
+
+  48      28AD
+  49 00a4 BF1EF9DC 		.ascii	"\277\036\371\334\256R\216\020\245\327g\247\035K\354"
+  49      AE528E10 
+  49      A5D767A7 
+  49      1D4BEC
+  50 00b3 03A378A9 		.ascii	"\003\243x\251\372r\240=<&eF\312\202--G\010LAP?L\242"
+  50      FA72A03D 
+  50      3C266546 
+  50      CA822D2D 
+  50      47084C41 
+  51 00cb 1313E864 		.ascii	"\023\023\350dTb\270\2070\251\277.\344?@D\264\263T\274"
+  51      5462B887 
+  51      30A9BF2E 
+  51      E43F4044 
+  51      B4B354BC 
+  52 00df 7C9B6F3A 		.ascii	"|\233o:\253\332\351\303\375\255N\037\3034\302J>?U\375"
+  52      ABDAE9C3 
+  52      FDAD4E1F 
+  52      C334C24A 
+  52      3E3F55FD 
+  53 00f3 688903DA 		.ascii	"h\211\003\332\372\242\236\251\030]w\225\325\275\266"
+  53      FAA29EA9 
+  53      185D7795 
+  53      D5BDB6
+  54 0102 8A61E9E6 		.ascii	"\212a\351\346B\2160\360\240\325\256\026\251WJ\0337\332"
+  54      428E30F0 
+  54      A0D5AE16 
+  54      A9574A1B 
+  54      37DA
+  55 0114 FC3975E4 		.ascii	"\3749u\344\020\212\350\362\016\213\031\370\325\370\212"
+  55      108AE8F2 
+  55      0E8B19F8 
+  55      D5F88A
+  56 0123 275CD96C 		.ascii	"'\\\331lf\245{\265c\231\357\004\324\237\322\344\210"
+  56      66A57BB5 
+  56      6399EF04 
+  56      D49FD2E4 
+  56      88
+  57 0134 2A88EFF7 		.ascii	"*\210\357\367\323\3074Ud\251(\250\"\306j\324A\315\266"
+  57      D3C73455 
+  57      64A928A8 
+  57      22C66AD4 
+  57      41CDB6
+  58 0147 CEB9DAC5 		.ascii	"\316\271\332\305\0122\356\3151\350\236D\310\012\260"
+  58      0A32EECD 
+  58      31E89E44 
+  58      C80AB0
+  59 0156 3564D6F3 		.ascii	"5d\326\363?\032\206\252e\205\310\012N\245\362\320\362"
+  59      3F1A86AA 
+  59      6585C80A 
+  59      4EA5F2D0 
+  59      F2
+  60 0167 6E55A0BF 		.ascii	"nU\240\277\032r\312oL5SC\037\351N}xP\0240\232\316\245"
+  60      1A72CA6F 
+  60      4C355343 
+  60      1FE94E7D 
+  60      78501430 
+ARM GAS  C:\Users\unyacat\AppData\Local\Temp\ccnjDJTH.s 			page 4
+
+
+  61 017e A53C4E94 		.ascii	"\245<N\224\0005AI\235\002\017Q\000\265 \177v}\340\327"
+  61      00354149 
+  61      9D020F51 
+  61      00B5207F 
+  61      767DE0D7 
+  62 0192 17CB6B49 		.ascii	"\027\313kI\217\272\320\221\371F\305P},\0040Kz\015\376"
+  62      8FBAD091 
+  62      F946C550 
+  62      7D2C0430 
+  62      4B7A0DFE 
+  63 01a6 C33D9149 		.ascii	"\303=\221I\272V\356\\~\261\024\364\270\240\364\233\363"
+  63      BA56EE5C 
+  63      7EB114F4 
+  63      B8A0F49B 
+  63      F3
+  64 01b7 3ECFB771 		.ascii	">\317\267q\037i\356\234\346\232\036w\343?\327\362\270"
+  64      1F69EE9C 
+  64      E69A1E77 
+  64      E33FD7F2 
+  64      B8
+  65 01c8 EF6A8BA3 		.ascii	"\357j\213\243;<\356.<\336\312\015\222\256\225\273P\270"
+  65      3B3CEE2E 
+  65      3CDECA0D 
+  65      92AE95BB 
+  65      50B8
+  66 01da 34B9C955 		.ascii	"4\271\311U\366\347\027+\277\255m\334'\232\373Ts\203"
+  66      F6E7172B 
+  66      BFAD6DDC 
+  66      279AFB54 
+  66      7383
+  67 01ec EC3B4DB5 		.ascii	"\354;M\265\324\241\374\372*k\034j\3304\372\275G\355"
+  67      D4A1FCFA 
+  67      2A6B1C6A 
+  67      D834FABD 
+  67      47ED
+  68 01fe 3376229A 		.ascii	"3v\"\232\264\343'\273\373R\211\230\335s\254\273\357"
+  68      B4E327BB 
+  68      FB528998 
+  68      DD73ACBB 
+  68      EF
+  69 020f C8C19ED8 		.ascii	"\310\301\236\330\205T\362T\357\271\3751\346\213\306"
+  69      8554F254 
+  69      EFB9FD31 
+  69      E68BC6
+  70 021e E309E37C 		.ascii	"\343\011\343|\2647e\233\311\323g\017S\366\017\315\350"
+  70      B437659B 
+  70      C9D3670F 
+  70      53F60FCD 
+  70      E8
+  71 022f FA4A     		.ascii	"\372J"
+  72              		.text
+  73              		.section	.gnu.lto_CyGetReg24.9235c5b9,"",%progbits
+  74 0000 789C6D52 		.ascii	"x\234mRMh\023A\024\236ofw\263\233\244\305\2037{\210"
+  74      4D681341 
+  74      149E6F66 
+  74      77B39BA4 
+  74      C583377B 
+ARM GAS  C:\Users\unyacat\AppData\Local\Temp\ccnjDJTH.s 			page 5
+
+
+  75 0015 6028B9E8 		.ascii	"`(\271\350E<+\036\274\212\275\026\244$9\010\325Jm\005"
+  75      453C2B1E 
+  75      BC8ABD16 
+  75      A4243908 
+  75      D54A6D05 
+  76 0029 4FDD26D9 		.ascii	"O\335&\331\006\177@\017Z\222j\033D\244?\032\333X\253"
+  76      067F400F 
+  76      5A926A1B 
+  76      44A43F1A 
+  76      DB58AB
+  77 003c 428BC622 		.ascii	"B\213\306\"=\204Z\261*Z\360 \265\250xJ\264\245b\265"
+  77      3D845AB1 
+  77      2A5AF020 
+  77      B5A8784A 
+  77      B4A562B5 
+  78 0050 F1BDDD50 		.ascii	"\361\275\335P\214:\2603\363\276}\337\367\276\2317\232"
+  78      8C3AB033 
+  78      F3BE7DDF 
+  78      F7BE9937 
+  78      9A
+  79 0061 80E0B15F 		.ascii	"\200\340\261_\011\261\217\326\035\364A\011\310K\013"
+  79      09B18FD6 
+  79      1DF44109 
+  79      C84B0B
+  80 0070 42F49A12 		.ascii	"B\364\232\022\340\215mB\364H\364`M\376\222x\221\232"
+  80      E08D6D42 
+  80      F448F460 
+  80      4DFE9278 
+  80      919A
+  81 0082 B8A656A5 		.ascii	"\270\246V\245Ci\032\205\225g\003\037\0329\004B\024^"
+  81      43691A85 
+  81      9567031F 
+  81      1A390442 
+  81      145E
+  82 0094 B517CFFA 		.ascii	"\265\027\317\372\"\303\266\235\260\337;C\333\263#E\315"
+  82      22C3B69D 
+  82      B0DF3B43 
+  82      DBB32345 
+  82      CD
+  83 00a5 515254A5 		.ascii	"QRT\245\300\010\2320\214&.1\212\010\345^\236\314;\226"
+  83      C0089A30 
+  83      8C262E31 
+  83      8A08E55E 
+  83      9ECC3B96 
+  84 00b9 DA0541FB 		.ascii	"\332\005A\373\205\245\271\276\306\346\233\314\263\337"
+  84      85A5B9BE 
+  84      C6E69BCC 
+  84      B3DF
+  85 00c7 C46DCB51 		.ascii	"\304m\313Q\012cP\177\362\010\022\270\205fN\3774\223"
+  85      0A63507F 
+  85      F20812B8 
+  85      85664EFF 
+  85      3493
+  86 00d9 7E051571 		.ascii	"~\005\025q\251S\217\336f\374\341\033L-\256\027\220\265"
+  86      A9538FDE 
+  86      66FCE11B 
+  86      4C2DAE17 
+ARM GAS  C:\Users\unyacat\AppData\Local\Temp\ccnjDJTH.s 			page 6
+
+
+  86      90B5
+  87 00eb 8BA910D5 		.ascii	"\213\251\020\325\304\355z:\017\312\236\036[zm\251=."
+  87      C4ED7A3A 
+  87      0FCA9E1E 
+  87      5B7A6DA9 
+  87      3D2E
+  88 00fd F3692551 		.ascii	"\363i%Q\322k\314\265\274\25415\334\371/s\271\260y\245"
+  88      D26BCCB5 
+  88      BCAC3135 
+  88      DCF92F73 
+  88      B9B079A5 
+  89 0111 C148D934 		.ascii	"\301H\3314B\030G\030y\204\371`t\236\011\030t\221`d\374"
+  89      42184718 
+  89      7984F960 
+  89      749E0918 
+  89      74916064 
+  90 0126 48D1AE56 		.ascii	"H\321\256V\223v\361[\370I\306h\000\330\262\"\363\272"
+  90      9376F15B 
+  90      F849C668 
+  90      00D8B222 
+  90      F3BA
+  91 0138 26F8BFCE 		.ascii	"&\370\277\316[\203&\303\307\223\351\202\026\203~\216"
+  91      5B8326C3 
+  91      C793E982 
+  91      16837E8E 
+  92 0148 033C055D 		.ascii	"\003<\005]P\2102\211s\003*R\362\252\226\221(nL\301-"
+  92      50883289 
+  92      73032A52 
+  92      F2AA9691 
+  92      286E4CC1 
+  93 015d 4706920A 		.ascii	"G\006\222\012\342#f\177\234\333\\\267\030K*E6\373\235"
+  93      E223667F 
+  93      9CDB5CB7 
+  93      184B2A45 
+  93      36FB9D
+  94 0170 D9E73E6E 		.ascii	"\331\347>n\210\346\236\361z%{Q\3450\330\233\202\243"
+  94      88E69EF1 
+  94      7A257B51 
+  94      E530D89B 
+  94      82A3
+  95 0182 7C444181 		.ascii	"|DA\201\217\204\273\3101;\3615\275\"=\262F|\261\014"
+  95      8F84BBC8 
+  95      313BF135 
+  95      BD223DB2 
+  95      467CB10C 
+  96 0196 37E2FA84 		.ascii	"7\342\372\204x\362s\231!x):_wz\276\340\367\364A\341"
+  96      78F27399 
+  96      2178293A 
+  96      5F777ABE 
+  96      E0F7F441 
+  97 01ab 67E7655A 		.ascii	"g\347eZ\326\351O\272\372\367\266\364\177\326\364\231"
+  97      D6E94FBA 
+  97      FAF7B6F4 
+  97      7FD6F499 
+  98 01bb 4F48B2DC 		.ascii	"OH\262\334\267\242{\010\245\033$10\275Z\322Y\321\204"
+  98      B7A27B08 
+  98      A51B2431 
+ARM GAS  C:\Users\unyacat\AppData\Local\Temp\ccnjDJTH.s 			page 7
+
+
+  98      30BD5AD2 
+  98      59D184
+  99 01ce 89296253 		.ascii	"\211)bS\322\367\276w5\232\351:\363\325;3=g\013[\316"
+  99      D2F7BE77 
+  99      359AE93A 
+  99      F3D53B33 
+  99      3D670B5B 
+ 100 01e3 2CD299C9 		.ascii	",\322\231\311]\030\2559\343\207\372\370|i\303\252sv"
+ 100      5D18AD39 
+ 100      E387FAF8 
+ 100      7C69C3AA 
+ 100      7376
+ 101 01f5 DF75F6E0 		.ascii	"\337u\366\340\037g~\342\327;\013\020H\022\213\345\371"
+ 101      1F677EE2 
+ 101      D73B0B10 
+ 101      48128BE5 
+ 101      F9
+ 102 0206 C180E76C 		.ascii	"\301\200\347l\033\036\376\355,\350\232\013\324;\013"
+ 102      1B1EFEED 
+ 102      2CE89A0B 
+ 102      D43B0B
+ 103 0215 8A2FD4A5 		.ascii	"\212/\324\245~\243\226\302o\247,\301\355\243f\356<\024"
+ 103      7EA396C2 
+ 103      6FA72CC1 
+ 103      EDA366EE 
+ 103      3C14
+ 104 0227 3F11EF6C 		.ascii	"?\021\357l\353\212\307\216\266ttwF\343\255\207[:\016"
+ 104      EB8AC78E 
+ 104      B6747477 
+ 104      46E3AD87 
+ 104      5B3A0E
+ 105 023a EE6D8D9E 		.ascii	"\356m\215\236\351\356:\326~jwThm\261X\247~\272\255\275"
+ 105      E9EE3AD6 
+ 105      7E6A7754 
+ 105      686DB158 
+ 105      A77EBAAD 
+ 106 024f 3BEEEB3A 		.ascii	";\356\353:~\362\000E\277\001\275\253\025\317"
+ 106      7EF20045 
+ 106      BF01BDAB 
+ 106      15CF
+ 107              		.text
+ 108              		.section	.gnu.lto_.symbol_nodes.9235c5b9,"",%progbits
+ 109 0000 789C6361 		.ascii	"x\234ca`dPa\000\002&\206z\006\206\011\347\030@\324\256"
+ 109      60645061 
+ 109      00022686 
+ 109      7A068609 
+ 109      E71840D4 
+ 110 0015 0645A000 		.ascii	"\006E\240\000c=#\212\000\003\000\217\325\007\236"
+ 110      633D238A 
+ 110      0003008F 
+ 110      D5079E
+ 111              		.text
+ 112              		.section	.gnu.lto_.refs.9235c5b9,"",%progbits
+ 113 0000 789C6361 		.ascii	"x\234ca`\004B \000\000\0009\000\007"
+ 113      60044220 
+ 113      00000039 
+ 113      0007
+ARM GAS  C:\Users\unyacat\AppData\Local\Temp\ccnjDJTH.s 			page 8
+
+
+ 114              		.text
+ 115              		.section	.gnu.lto_.decls.9235c5b9,"",%progbits
+ 116 0000 789C8D52 		.ascii	"x\234\215R]H\024Q\024\276gf\375\033w5D\304\207\0116"
+ 116      5D481451 
+ 116      14BE6766 
+ 116      FD1B7735 
+ 116      44C48709 
+ 117 0015 5FF469C9 		.ascii	"_\364i\311\237\207\336z\020\362\255?\311'!\314\226\024"
+ 117      9F87DE7A 
+ 117      10F2AD3F 
+ 117      C92721CC 
+ 117      9614
+ 118 0027 444BD707 		.ascii	"DK\327\007\337.\256BE\017+D\251\030j\277kZ\273j\255"
+ 118      DF2EAE42 
+ 118      450F2B44 
+ 118      A9186ABF 
+ 118      6B5ABB6A 
+ 119 003c AD9AAD7F 		.ascii	"\255\232\255\177\340OB\262\"\324j\032*\375\240\245)"
+ 119      E04F42B2 
+ 119      22D46A1A 
+ 119      2AFDA0A5 
+ 119      29
+ 120 004d 8588D9B9 		.ascii	"\205\210\331\271wfvv\255\310\303|s\357=s\316w\317w\346"
+ 120      77667676 
+ 120      ADC8C37C 
+ 120      73EF3D73 
+ 120      CE77CF77 
+ 121 0062 18081066 		.ascii	"\030\010\020f\343\006B\256\340\352C\354\241\211\270"
+ 121      E30642AE 
+ 121      E0EA43EC 
+ 121      A189B8
+ 122 0071 E611DD04 		.ascii	"\346\021\335\004\204\007\321O\3764\346\227\324\370\004"
+ 122      8407D14F 
+ 122      FE34E697 
+ 122      D4F804
+ 123 0080 4422A21B 		.ascii	"D\"\242\033\341B\014#dD*b\010qJ\315\0015o\2771\376\230"
+ 123      E1420C23 
+ 123      64442A62 
+ 123      08714ACD 
+ 123      01356FBF 
+ 124 0097 101EC6E1 		.ascii	"\020\036\306\341E\214\206\360\214\354\343\371[M\273"
+ 124      458C86F0 
+ 124      8CECE3F9 
+ 124      5B4DBB
+ 125 00a6 0238FD9B 		.ascii	"\0028\375\233T\012\300[\020\211*\222\000(o\340 \012"
+ 125      540AC05B 
+ 125      10892A92 
+ 125      00286FE0 
+ 125      200A
+ 126 00b8 F8113702 		.ascii	"\370\0217\002Q6\232+h\004\224/\202\352%:\031\177\324"
+ 126      51369A2B 
+ 126      6804942F 
+ 126      82EA253A 
+ 126      197FD4
+ 127 00cb 7CD8D38C 		.ascii	"|\330\323\214\223\350\354\240&A\260\002\376YI\202 \253"
+ 127      93E8ECA0 
+ 127      2641B002 
+ARM GAS  C:\Users\unyacat\AppData\Local\Temp\ccnjDJTH.s 			page 9
+
+
+ 127      FE594982 
+ 127      20AB
+ 128 00dd B2087A46 		.ascii	"\262\010zF\010\337\276\212\264\232\265k\370\357\341"
+ 128      08DFBE8A 
+ 128      B49AB56B 
+ 128      F8EFE1
+ 129 00ec A26F56DF 		.ascii	"\242oV\337\251\215\021\005`\373\205m\347\011K\007Es"
+ 129      A98D1105 
+ 129      60FB856D 
+ 129      E7094B07 
+ 129      4573
+ 130 00fe 502A1CD6 		.ascii	"P*\034\326;3?\326\326.n\011\220*\361\232\343\321\345"
+ 130      3B333FD6 
+ 130      D62E6E09 
+ 130      902AF19A 
+ 130      E3D1E5
+ 131 0111 5AF56E9B 		.ascii	"Z\365n\233\024\027\213\230XX\371\036#&\361\375t\215"
+ 131      14178B98 
+ 131      5858F91E 
+ 131      2326F1FD 
+ 131      748D
+ 132 0123 BB894527 		.ascii	"\273\211E'H`\300\343\306T\343R\034\036\023%0\357\012"
+ 132      4860C0E3 
+ 132      C654E352 
+ 132      1C1E1325 
+ 132      30EF0A
+ 133 0136 82E75EF3 		.ascii	"\202\347^\363f\004HiW)\255\246\016;M\030\213#\360\024"
+ 133      66044869 
+ 133      5729ADA6 
+ 133      0E3B4D18 
+ 133      8B23F014 
+ 134 014a 64780232 		.ascii	"dx\0022\0017\2441\3126\260\020hG\347ct>d\025-\356l\035"
+ 134      0137A431 
+ 134      CA36B010 
+ 134      6847E763 
+ 134      743E6415 
+ 135 0162 F7527A08 		.ascii	"\367Rz\010\\ A\007\210<\004\345\244JJ\211k\337\232\247"
+ 135      5C204107 
+ 135      883C04E5 
+ 135      A44A4A89 
+ 135      6BDF9AA7 
+ 136 0176 A20C288B 		.ascii	"\242\014(\213\007\\00_o\207\253^\224\360\"\373\301."
+ 136      075C3030 
+ 136      5F6F87AB 
+ 136      5E94F022 
+ 136      FBC12E
+ 137 0189 C21447EB 		.ascii	"\302\024G\353\316\247x\343u\2756\350B:-\213@7\030\325"
+ 137      CEA778E3 
+ 137      75BD36E8 
+ 137      423A2D8B 
+ 137      403718D5 
+ 138 019d 9E04AEBD 		.ascii	"\236\004\256\275\231\210\340\027\242\017:\201\337x\277"
+ 138      9988E017 
+ 138      A20F3A81 
+ 138      DF78BF
+ 139 01ac 71F0B631 		.ascii	"q\360\2661\371\026o\241\235\232\015\220\227\024\222"
+ 139      F9166FA1 
+ARM GAS  C:\Users\unyacat\AppData\Local\Temp\ccnjDJTH.s 			page 10
+
+
+ 139      9D9A0D90 
+ 139      971492
+ 140 01bb FC1C92F1 		.ascii	"\374\034\222\361\375\014C9\303\227\246\300xlJ\013mq"
+ 140      FD0C4339 
+ 140      C397A6C0 
+ 140      786C4A0B 
+ 140      6D71
+ 141 01cd D3C5BDDD 		.ascii	"\323\305\275\3353uv:\206yf\026\006N]\241\223\315#\201"
+ 141      3375763A 
+ 141      86796616 
+ 141      064E5DA1 
+ 141      93CD2381 
+ 142 01e1 4710C07F 		.ascii	"G\020\300\177\347\201\024\314\364\374x\367\300(\026"
+ 142      E78114CC 
+ 142      F4FC78F7 
+ 142      C02816
+ 143 01f0 F06ECFAF 		.ascii	"\360n\317\257\254\327Gi\"\035\007\022\351\357\374\360"
+ 143      ACD74769 
+ 143      221D0712 
+ 143      E9EFFCF0 
+ 144 0200 D11426F2 		.ascii	"\321\024&\362E\230HoPdk_C\021\327\210.\265\251s7Z\374"
+ 144      4598486F 
+ 144      50646B5F 
+ 144      4311D788 
+ 144      2EB5A973 
+ 145 0217 A65089AE 		.ascii	"\246P\211\256\260\334>\256\261W\323\370\276km\316\244"
+ 145      B0DC3EAE 
+ 145      B157D3F8 
+ 145      BE6B6DCE 
+ 145      A4
+ 146 0228 68F46DB4 		.ascii	"h\364m\264B\003\365\325`\242\300\302\240G\327\330\023"
+ 146      4203F5D5 
+ 146      60A2C0C2 
+ 146      A047D7D8 
+ 146      13
+ 147 0239 AAB19F6B 		.ascii	"\252\261\237kt\325.\267E\343\330\3108s\0202p\2622p\015"
+ 147      74D52EB7 
+ 147      45E3D8C8 
+ 147      38731032 
+ 147      70B23270 
+ 148 024e 754BBF62 		.ascii	"uK\277b\305\022\266\027\374K\355\237\015\220&\251\203"
+ 148      C512B617 
+ 148      FC4BED9F 
+ 148      0D9026A9 
+ 148      83
+ 149 025f B2AA0CCA 		.ascii	"\262\252\014\312 \326\365J\277Bf\203\302\207n\375.\215"
+ 149      20D6F54A 
+ 149      BF426683 
+ 149      C2876EFD 
+ 149      2E8D
+ 150 0271 4C269029 		.ascii	"L&\220)\303Q\354\221\017{$\253=\032@\031/\225\036m\325"
+ 150      C351EC91 
+ 150      0F7B24AB 
+ 150      3D1A4019 
+ 150      2F951E6D 
+ 151 0286 6CCE462A 		.ascii	"l\316F*m=P\374\353\231\311\201\250\260\236\016\205\365"
+ 151      6D3D50FC 
+ARM GAS  C:\Users\unyacat\AppData\Local\Temp\ccnjDJTH.s 			page 11
+
+
+ 151      EB99C981 
+ 151      A8B09E0E 
+ 151      85F5
+ 152 0298 6558E929 		.ascii	"eX\351)[1\332=\263\\\037\255\261;\376\317\376\363\353"
+ 152      5B31DA3D 
+ 152      B35C1FAD 
+ 152      B13BFECF 
+ 152      FEF3EB
+ 153 02ab ECB4318C 		.ascii	"\354\2641\214}$\214}Teg\253\224]\225k\265\235\265^\312"
+ 153      7D248C7D 
+ 153      546567AB 
+ 153      945D956B 
+ 153      B59DB55E 
+ 154 02c0 C88ACE39 		.ascii	"\310\212\3169y\316\234\235\236N\"+\213Km\231\031Gr\254"
+ 154      79CE9C9D 
+ 154      9E4E222B 
+ 154      8B4B6D99 
+ 154      194772AC 
+ 155 02d4 A5D6F202 		.ascii	"\245\326\362\002\233\365\342\371\334\262\312\362Bk\376"
+ 155      9BF5E2F9 
+ 155      DCB2CAF2 
+ 155      426BFE
+ 156 02e3 E9DCB2EC 		.ascii	"\351\334\262\354\254\374\302*[\325ek\205\245\210\374"
+ 156      ACFCC22A 
+ 156      5BD5656B 
+ 156      85A588FC 
+ 157 02f3 3BA2D256 		.ascii	";\242\322V\\Ra)d\3649*}\004c=\366\033*\376vP"
+ 157      5C526129 
+ 157      64F4392A 
+ 157      7D04633D 
+ 157      F61B2AFE 
+ 158              		.text
+ 159              		.section	.gnu.lto_.symtab.9235c5b9,"",%progbits
+ 160 0000 43795365 		.ascii	"CySetReg24\000"
+ 160      74526567 
+ 160      323400
+ 161 000b 00       		.ascii	"\000"
+ 162 000c 00       		.ascii	"\000"
+ 163 000d 00       		.ascii	"\000"
+ 164 000e 00000000 		.ascii	"\000\000\000\000\000\000\000\000"
+ 164      00000000 
+ 165 0016 B6000000 		.ascii	"\266\000\000\000"
+ 166 001a 43794765 		.ascii	"CyGetReg24\000"
+ 166      74526567 
+ 166      323400
+ 167 0025 00       		.ascii	"\000"
+ 168 0026 00       		.ascii	"\000"
+ 169 0027 00       		.ascii	"\000"
+ 170 0028 00000000 		.ascii	"\000\000\000\000\000\000\000\000"
+ 170      00000000 
+ 171 0030 BC000000 		.ascii	"\274\000\000\000"
+ 172              		.text
+ 173              		.section	.gnu.lto_.opts,"",%progbits
+ 174 0000 272D666D 		.ascii	"'-fmath-errno' '-fsigned-zeros' '-ftrapping-math' '"
+ 174      6174682D 
+ 174      6572726E 
+ 174      6F272027 
+ARM GAS  C:\Users\unyacat\AppData\Local\Temp\ccnjDJTH.s 			page 12
+
+
+ 174      2D667369 
+ 175 0033 2D666E6F 		.ascii	"-fno-trapv' '-fno-openmp' '-fno-openacc' '-mcpu=cor"
+ 175      2D747261 
+ 175      70762720 
+ 175      272D666E 
+ 175      6F2D6F70 
+ 176 0066 7465782D 		.ascii	"tex-m0' '-mthumb' '-g' '-O3' '-ffunction-sections' "
+ 176      6D302720 
+ 176      272D6D74 
+ 176      68756D62 
+ 176      2720272D 
+ 177 0099 272D6666 		.ascii	"'-ffat-lto-objects' '-finline-functions' '-flto'\000"
+ 177      61742D6C 
+ 177      746F2D6F 
+ 177      626A6563 
+ 177      74732720 
+ 178              		.text
+ 179              		.cfi_sections	.debug_frame
+ 180              		.section	.text.CySetReg24,"ax",%progbits
+ 181              		.align	2
+ 182              		.global	CySetReg24
+ 183              		.code	16
+ 184              		.thumb_func
+ 185              		.type	CySetReg24, %function
+ 186              	CySetReg24:
+ 187              	.LFB0:
+ 188              		.file 1 "Generated_Source\\PSoC4\\cyutils.c"
+   1:Generated_Source\PSoC4/cyutils.c **** /***************************************************************************//**
+   2:Generated_Source\PSoC4/cyutils.c **** * \file cyutils.c
+   3:Generated_Source\PSoC4/cyutils.c **** * \version 6.0
+   4:Generated_Source\PSoC4/cyutils.c **** *
+   5:Generated_Source\PSoC4/cyutils.c **** * \brief Provides a function to handle 24-bit value writes.
+   6:Generated_Source\PSoC4/cyutils.c **** *
+   7:Generated_Source\PSoC4/cyutils.c **** ********************************************************************************
+   8:Generated_Source\PSoC4/cyutils.c **** * \copyright
+   9:Generated_Source\PSoC4/cyutils.c **** * Copyright 2008-2018, Cypress Semiconductor Corporation.  All rights reserved.
+  10:Generated_Source\PSoC4/cyutils.c **** * You may use this file only in accordance with the license, terms, conditions,
+  11:Generated_Source\PSoC4/cyutils.c **** * disclaimers, and limitations in the end user license agreement accompanying
+  12:Generated_Source\PSoC4/cyutils.c **** * the software package with which this file was provided.
+  13:Generated_Source\PSoC4/cyutils.c **** *******************************************************************************/
+  14:Generated_Source\PSoC4/cyutils.c **** 
+  15:Generated_Source\PSoC4/cyutils.c **** #include "cytypes.h"
+  16:Generated_Source\PSoC4/cyutils.c **** 
+  17:Generated_Source\PSoC4/cyutils.c **** #if (!CY_PSOC3)
+  18:Generated_Source\PSoC4/cyutils.c **** 
+  19:Generated_Source\PSoC4/cyutils.c ****     /***************************************************************************
+  20:Generated_Source\PSoC4/cyutils.c ****     * Function Name: CySetReg24
+  21:Generated_Source\PSoC4/cyutils.c ****     ************************************************************************//**
+  22:Generated_Source\PSoC4/cyutils.c ****     *
+  23:Generated_Source\PSoC4/cyutils.c ****     * Writes a 24-bit value to the specified register.
+  24:Generated_Source\PSoC4/cyutils.c ****     *
+  25:Generated_Source\PSoC4/cyutils.c ****     * \param addr The address where data must be written.
+  26:Generated_Source\PSoC4/cyutils.c ****     * \param value The data that must be written.
+  27:Generated_Source\PSoC4/cyutils.c ****     *
+  28:Generated_Source\PSoC4/cyutils.c ****     * \reentrant No
+  29:Generated_Source\PSoC4/cyutils.c ****     *
+  30:Generated_Source\PSoC4/cyutils.c ****     ***************************************************************************/
+ARM GAS  C:\Users\unyacat\AppData\Local\Temp\ccnjDJTH.s 			page 13
+
+
+  31:Generated_Source\PSoC4/cyutils.c ****     void CySetReg24(uint32 volatile * addr, uint32 value)
+  32:Generated_Source\PSoC4/cyutils.c ****     {
+ 189              		.loc 1 32 0
+ 190              		.cfi_startproc
+ 191              		@ args = 0, pretend = 0, frame = 0
+ 192              		@ frame_needed = 0, uses_anonymous_args = 0
+ 193              		@ link register save eliminated.
+ 194              	.LVL0:
+  33:Generated_Source\PSoC4/cyutils.c ****         uint8 volatile *tmpAddr;
+  34:Generated_Source\PSoC4/cyutils.c **** 
+  35:Generated_Source\PSoC4/cyutils.c ****         tmpAddr = (uint8 volatile *) addr;
+  36:Generated_Source\PSoC4/cyutils.c **** 
+  37:Generated_Source\PSoC4/cyutils.c ****         tmpAddr[0u] = (uint8) value;
+ 195              		.loc 1 37 0
+ 196 0000 CBB2     		uxtb	r3, r1
+ 197 0002 0370     		strb	r3, [r0]
+  38:Generated_Source\PSoC4/cyutils.c ****         tmpAddr[1u] = (uint8) (value >> 8u);
+ 198              		.loc 1 38 0
+ 199 0004 0B0A     		lsrs	r3, r1, #8
+  39:Generated_Source\PSoC4/cyutils.c ****         tmpAddr[2u] = (uint8) (value >> 16u);
+ 200              		.loc 1 39 0
+ 201 0006 090C     		lsrs	r1, r1, #16
+ 202              	.LVL1:
+  38:Generated_Source\PSoC4/cyutils.c ****         tmpAddr[1u] = (uint8) (value >> 8u);
+ 203              		.loc 1 38 0
+ 204 0008 DBB2     		uxtb	r3, r3
+ 205              		.loc 1 39 0
+ 206 000a C9B2     		uxtb	r1, r1
+  38:Generated_Source\PSoC4/cyutils.c ****         tmpAddr[1u] = (uint8) (value >> 8u);
+ 207              		.loc 1 38 0
+ 208 000c 4370     		strb	r3, [r0, #1]
+  40:Generated_Source\PSoC4/cyutils.c ****     }
+ 209              		.loc 1 40 0
+ 210              		@ sp needed
+  39:Generated_Source\PSoC4/cyutils.c ****         tmpAddr[2u] = (uint8) (value >> 16u);
+ 211              		.loc 1 39 0
+ 212 000e 8170     		strb	r1, [r0, #2]
+ 213              		.loc 1 40 0
+ 214 0010 7047     		bx	lr
+ 215              		.cfi_endproc
+ 216              	.LFE0:
+ 217              		.size	CySetReg24, .-CySetReg24
+ 218 0012 C046     		.section	.text.CyGetReg24,"ax",%progbits
+ 219              		.align	2
+ 220              		.global	CyGetReg24
+ 221              		.code	16
+ 222              		.thumb_func
+ 223              		.type	CyGetReg24, %function
+ 224              	CyGetReg24:
+ 225              	.LFB1:
+  41:Generated_Source\PSoC4/cyutils.c **** 
+  42:Generated_Source\PSoC4/cyutils.c **** 
+  43:Generated_Source\PSoC4/cyutils.c ****     #if(CY_PSOC4)
+  44:Generated_Source\PSoC4/cyutils.c **** 
+  45:Generated_Source\PSoC4/cyutils.c ****         /***************************************************************************
+  46:Generated_Source\PSoC4/cyutils.c ****         * Function Name: CyGetReg24
+  47:Generated_Source\PSoC4/cyutils.c ****         ************************************************************************//**
+ARM GAS  C:\Users\unyacat\AppData\Local\Temp\ccnjDJTH.s 			page 14
+
+
+  48:Generated_Source\PSoC4/cyutils.c ****         *
+  49:Generated_Source\PSoC4/cyutils.c ****         * Reads the 24-bit value from the specified register.
+  50:Generated_Source\PSoC4/cyutils.c ****         *
+  51:Generated_Source\PSoC4/cyutils.c ****         * \param addr The address where data must be read.
+  52:Generated_Source\PSoC4/cyutils.c ****         *
+  53:Generated_Source\PSoC4/cyutils.c ****         * \reentrant No
+  54:Generated_Source\PSoC4/cyutils.c ****         *
+  55:Generated_Source\PSoC4/cyutils.c ****         ***************************************************************************/
+  56:Generated_Source\PSoC4/cyutils.c ****         uint32 CyGetReg24(uint32 const volatile * addr)
+  57:Generated_Source\PSoC4/cyutils.c ****         {
+ 226              		.loc 1 57 0
+ 227              		.cfi_startproc
+ 228              		@ args = 0, pretend = 0, frame = 0
+ 229              		@ frame_needed = 0, uses_anonymous_args = 0
+ 230              		@ link register save eliminated.
+ 231              	.LVL2:
+ 232              		.loc 1 57 0
+ 233 0000 0300     		movs	r3, r0
+  58:Generated_Source\PSoC4/cyutils.c ****             uint8 const volatile *tmpAddr;
+  59:Generated_Source\PSoC4/cyutils.c ****             uint32 value;
+  60:Generated_Source\PSoC4/cyutils.c **** 
+  61:Generated_Source\PSoC4/cyutils.c ****             tmpAddr = (uint8 const volatile *) addr;
+  62:Generated_Source\PSoC4/cyutils.c **** 
+  63:Generated_Source\PSoC4/cyutils.c ****             value  =  (uint32) tmpAddr[0u];
+ 234              		.loc 1 63 0
+ 235 0002 0278     		ldrb	r2, [r0]
+ 236              	.LVL3:
+  64:Generated_Source\PSoC4/cyutils.c ****             value |= ((uint32) tmpAddr[1u] << 8u );
+ 237              		.loc 1 64 0
+ 238 0004 4078     		ldrb	r0, [r0, #1]
+ 239              	.LVL4:
+  65:Generated_Source\PSoC4/cyutils.c ****             value |= ((uint32) tmpAddr[2u] << 16u);
+ 240              		.loc 1 65 0
+ 241 0006 9B78     		ldrb	r3, [r3, #2]
+ 242              	.LVL5:
+  66:Generated_Source\PSoC4/cyutils.c **** 
+  67:Generated_Source\PSoC4/cyutils.c ****             return(value);
+ 243              		.loc 1 67 0
+ 244 0008 0002     		lsls	r0, r0, #8
+ 245              	.LVL6:
+ 246 000a 1B04     		lsls	r3, r3, #16
+ 247 000c 1843     		orrs	r0, r3
+ 248 000e 1043     		orrs	r0, r2
+  68:Generated_Source\PSoC4/cyutils.c ****         }
+ 249              		.loc 1 68 0
+ 250              		@ sp needed
+ 251 0010 7047     		bx	lr
+ 252              		.cfi_endproc
+ 253              	.LFE1:
+ 254              		.size	CyGetReg24, .-CyGetReg24
+ 255 0012 C046     		.text
+ 256              	.Letext0:
+ 257              		.file 2 "Generated_Source\\PSoC4\\cytypes.h"
+ 258              		.section	.debug_info,"",%progbits
+ 259              	.Ldebug_info0:
+ 260 0000 47010000 		.4byte	0x147
+ 261 0004 0400     		.2byte	0x4
+ARM GAS  C:\Users\unyacat\AppData\Local\Temp\ccnjDJTH.s 			page 15
+
+
+ 262 0006 00000000 		.4byte	.Ldebug_abbrev0
+ 263 000a 04       		.byte	0x4
+ 264 000b 01       		.uleb128 0x1
+ 265 000c 62000000 		.4byte	.LASF17
+ 266 0010 0C       		.byte	0xc
+ 267 0011 9E010000 		.4byte	.LASF18
+ 268 0015 3B010000 		.4byte	.LASF19
+ 269 0019 00000000 		.4byte	.Ldebug_ranges0+0
+ 270 001d 00000000 		.4byte	0
+ 271 0021 00000000 		.4byte	.Ldebug_line0
+ 272 0025 02       		.uleb128 0x2
+ 273 0026 01       		.byte	0x1
+ 274 0027 06       		.byte	0x6
+ 275 0028 EB010000 		.4byte	.LASF0
+ 276 002c 02       		.uleb128 0x2
+ 277 002d 01       		.byte	0x1
+ 278 002e 08       		.byte	0x8
+ 279 002f 27000000 		.4byte	.LASF1
+ 280 0033 02       		.uleb128 0x2
+ 281 0034 02       		.byte	0x2
+ 282 0035 05       		.byte	0x5
+ 283 0036 D2010000 		.4byte	.LASF2
+ 284 003a 02       		.uleb128 0x2
+ 285 003b 02       		.byte	0x2
+ 286 003c 07       		.byte	0x7
+ 287 003d 4F000000 		.4byte	.LASF3
+ 288 0041 02       		.uleb128 0x2
+ 289 0042 04       		.byte	0x4
+ 290 0043 05       		.byte	0x5
+ 291 0044 E2010000 		.4byte	.LASF4
+ 292 0048 02       		.uleb128 0x2
+ 293 0049 04       		.byte	0x4
+ 294 004a 07       		.byte	0x7
+ 295 004b 3D000000 		.4byte	.LASF5
+ 296 004f 02       		.uleb128 0x2
+ 297 0050 08       		.byte	0x8
+ 298 0051 05       		.byte	0x5
+ 299 0052 BF010000 		.4byte	.LASF6
+ 300 0056 02       		.uleb128 0x2
+ 301 0057 08       		.byte	0x8
+ 302 0058 07       		.byte	0x7
+ 303 0059 24010000 		.4byte	.LASF7
+ 304 005d 03       		.uleb128 0x3
+ 305 005e 04       		.byte	0x4
+ 306 005f 05       		.byte	0x5
+ 307 0060 696E7400 		.ascii	"int\000"
+ 308 0064 02       		.uleb128 0x2
+ 309 0065 04       		.byte	0x4
+ 310 0066 07       		.byte	0x7
+ 311 0067 17010000 		.4byte	.LASF8
+ 312 006b 04       		.uleb128 0x4
+ 313 006c DC010000 		.4byte	.LASF9
+ 314 0070 02       		.byte	0x2
+ 315 0071 FB01     		.2byte	0x1fb
+ 316 0073 2C000000 		.4byte	0x2c
+ 317 0077 04       		.uleb128 0x4
+ 318 0078 10010000 		.4byte	.LASF10
+ARM GAS  C:\Users\unyacat\AppData\Local\Temp\ccnjDJTH.s 			page 16
+
+
+ 319 007c 02       		.byte	0x2
+ 320 007d FD01     		.2byte	0x1fd
+ 321 007f 48000000 		.4byte	0x48
+ 322 0083 02       		.uleb128 0x2
+ 323 0084 04       		.byte	0x4
+ 324 0085 04       		.byte	0x4
+ 325 0086 21000000 		.4byte	.LASF11
+ 326 008a 02       		.uleb128 0x2
+ 327 008b 08       		.byte	0x8
+ 328 008c 04       		.byte	0x4
+ 329 008d 09010000 		.4byte	.LASF12
+ 330 0091 02       		.uleb128 0x2
+ 331 0092 01       		.byte	0x1
+ 332 0093 08       		.byte	0x8
+ 333 0094 CD010000 		.4byte	.LASF13
+ 334 0098 05       		.uleb128 0x5
+ 335 0099 6B000000 		.4byte	0x6b
+ 336 009d 05       		.uleb128 0x5
+ 337 009e 77000000 		.4byte	0x77
+ 338 00a2 06       		.uleb128 0x6
+ 339 00a3 11000000 		.4byte	.LASF20
+ 340 00a7 01       		.byte	0x1
+ 341 00a8 1F       		.byte	0x1f
+ 342 00a9 00000000 		.4byte	.LFB0
+ 343 00ad 12000000 		.4byte	.LFE0-.LFB0
+ 344 00b1 01       		.uleb128 0x1
+ 345 00b2 9C       		.byte	0x9c
+ 346 00b3 E1000000 		.4byte	0xe1
+ 347 00b7 07       		.uleb128 0x7
+ 348 00b8 1C000000 		.4byte	.LASF14
+ 349 00bc 01       		.byte	0x1
+ 350 00bd 1F       		.byte	0x1f
+ 351 00be E1000000 		.4byte	0xe1
+ 352 00c2 01       		.uleb128 0x1
+ 353 00c3 50       		.byte	0x50
+ 354 00c4 08       		.uleb128 0x8
+ 355 00c5 00000000 		.4byte	.LASF15
+ 356 00c9 01       		.byte	0x1
+ 357 00ca 1F       		.byte	0x1f
+ 358 00cb 77000000 		.4byte	0x77
+ 359 00cf 00000000 		.4byte	.LLST0
+ 360 00d3 09       		.uleb128 0x9
+ 361 00d4 35000000 		.4byte	.LASF16
+ 362 00d8 01       		.byte	0x1
+ 363 00d9 21       		.byte	0x21
+ 364 00da E7000000 		.4byte	0xe7
+ 365 00de 01       		.uleb128 0x1
+ 366 00df 50       		.byte	0x50
+ 367 00e0 00       		.byte	0
+ 368 00e1 0A       		.uleb128 0xa
+ 369 00e2 04       		.byte	0x4
+ 370 00e3 9D000000 		.4byte	0x9d
+ 371 00e7 0A       		.uleb128 0xa
+ 372 00e8 04       		.byte	0x4
+ 373 00e9 98000000 		.4byte	0x98
+ 374 00ed 0B       		.uleb128 0xb
+ 375 00ee 06000000 		.4byte	.LASF21
+ARM GAS  C:\Users\unyacat\AppData\Local\Temp\ccnjDJTH.s 			page 17
+
+
+ 376 00f2 01       		.byte	0x1
+ 377 00f3 38       		.byte	0x38
+ 378 00f4 77000000 		.4byte	0x77
+ 379 00f8 00000000 		.4byte	.LFB1
+ 380 00fc 12000000 		.4byte	.LFE1-.LFB1
+ 381 0100 01       		.uleb128 0x1
+ 382 0101 9C       		.byte	0x9c
+ 383 0102 34010000 		.4byte	0x134
+ 384 0106 08       		.uleb128 0x8
+ 385 0107 1C000000 		.4byte	.LASF14
+ 386 010b 01       		.byte	0x1
+ 387 010c 38       		.byte	0x38
+ 388 010d 34010000 		.4byte	0x134
+ 389 0111 21000000 		.4byte	.LLST1
+ 390 0115 0C       		.uleb128 0xc
+ 391 0116 35000000 		.4byte	.LASF16
+ 392 011a 01       		.byte	0x1
+ 393 011b 3A       		.byte	0x3a
+ 394 011c 3F010000 		.4byte	0x13f
+ 395 0120 4D000000 		.4byte	.LLST2
+ 396 0124 0C       		.uleb128 0xc
+ 397 0125 00000000 		.4byte	.LASF15
+ 398 0129 01       		.byte	0x1
+ 399 012a 3B       		.byte	0x3b
+ 400 012b 77000000 		.4byte	0x77
+ 401 012f 79000000 		.4byte	.LLST3
+ 402 0133 00       		.byte	0
+ 403 0134 0A       		.uleb128 0xa
+ 404 0135 04       		.byte	0x4
+ 405 0136 3A010000 		.4byte	0x13a
+ 406 013a 0D       		.uleb128 0xd
+ 407 013b 9D000000 		.4byte	0x9d
+ 408 013f 0A       		.uleb128 0xa
+ 409 0140 04       		.byte	0x4
+ 410 0141 45010000 		.4byte	0x145
+ 411 0145 0D       		.uleb128 0xd
+ 412 0146 98000000 		.4byte	0x98
+ 413 014a 00       		.byte	0
+ 414              		.section	.debug_abbrev,"",%progbits
+ 415              	.Ldebug_abbrev0:
+ 416 0000 01       		.uleb128 0x1
+ 417 0001 11       		.uleb128 0x11
+ 418 0002 01       		.byte	0x1
+ 419 0003 25       		.uleb128 0x25
+ 420 0004 0E       		.uleb128 0xe
+ 421 0005 13       		.uleb128 0x13
+ 422 0006 0B       		.uleb128 0xb
+ 423 0007 03       		.uleb128 0x3
+ 424 0008 0E       		.uleb128 0xe
+ 425 0009 1B       		.uleb128 0x1b
+ 426 000a 0E       		.uleb128 0xe
+ 427 000b 55       		.uleb128 0x55
+ 428 000c 17       		.uleb128 0x17
+ 429 000d 11       		.uleb128 0x11
+ 430 000e 01       		.uleb128 0x1
+ 431 000f 10       		.uleb128 0x10
+ 432 0010 17       		.uleb128 0x17
+ARM GAS  C:\Users\unyacat\AppData\Local\Temp\ccnjDJTH.s 			page 18
+
+
+ 433 0011 00       		.byte	0
+ 434 0012 00       		.byte	0
+ 435 0013 02       		.uleb128 0x2
+ 436 0014 24       		.uleb128 0x24
+ 437 0015 00       		.byte	0
+ 438 0016 0B       		.uleb128 0xb
+ 439 0017 0B       		.uleb128 0xb
+ 440 0018 3E       		.uleb128 0x3e
+ 441 0019 0B       		.uleb128 0xb
+ 442 001a 03       		.uleb128 0x3
+ 443 001b 0E       		.uleb128 0xe
+ 444 001c 00       		.byte	0
+ 445 001d 00       		.byte	0
+ 446 001e 03       		.uleb128 0x3
+ 447 001f 24       		.uleb128 0x24
+ 448 0020 00       		.byte	0
+ 449 0021 0B       		.uleb128 0xb
+ 450 0022 0B       		.uleb128 0xb
+ 451 0023 3E       		.uleb128 0x3e
+ 452 0024 0B       		.uleb128 0xb
+ 453 0025 03       		.uleb128 0x3
+ 454 0026 08       		.uleb128 0x8
+ 455 0027 00       		.byte	0
+ 456 0028 00       		.byte	0
+ 457 0029 04       		.uleb128 0x4
+ 458 002a 16       		.uleb128 0x16
+ 459 002b 00       		.byte	0
+ 460 002c 03       		.uleb128 0x3
+ 461 002d 0E       		.uleb128 0xe
+ 462 002e 3A       		.uleb128 0x3a
+ 463 002f 0B       		.uleb128 0xb
+ 464 0030 3B       		.uleb128 0x3b
+ 465 0031 05       		.uleb128 0x5
+ 466 0032 49       		.uleb128 0x49
+ 467 0033 13       		.uleb128 0x13
+ 468 0034 00       		.byte	0
+ 469 0035 00       		.byte	0
+ 470 0036 05       		.uleb128 0x5
+ 471 0037 35       		.uleb128 0x35
+ 472 0038 00       		.byte	0
+ 473 0039 49       		.uleb128 0x49
+ 474 003a 13       		.uleb128 0x13
+ 475 003b 00       		.byte	0
+ 476 003c 00       		.byte	0
+ 477 003d 06       		.uleb128 0x6
+ 478 003e 2E       		.uleb128 0x2e
+ 479 003f 01       		.byte	0x1
+ 480 0040 3F       		.uleb128 0x3f
+ 481 0041 19       		.uleb128 0x19
+ 482 0042 03       		.uleb128 0x3
+ 483 0043 0E       		.uleb128 0xe
+ 484 0044 3A       		.uleb128 0x3a
+ 485 0045 0B       		.uleb128 0xb
+ 486 0046 3B       		.uleb128 0x3b
+ 487 0047 0B       		.uleb128 0xb
+ 488 0048 27       		.uleb128 0x27
+ 489 0049 19       		.uleb128 0x19
+ARM GAS  C:\Users\unyacat\AppData\Local\Temp\ccnjDJTH.s 			page 19
+
+
+ 490 004a 11       		.uleb128 0x11
+ 491 004b 01       		.uleb128 0x1
+ 492 004c 12       		.uleb128 0x12
+ 493 004d 06       		.uleb128 0x6
+ 494 004e 40       		.uleb128 0x40
+ 495 004f 18       		.uleb128 0x18
+ 496 0050 9742     		.uleb128 0x2117
+ 497 0052 19       		.uleb128 0x19
+ 498 0053 01       		.uleb128 0x1
+ 499 0054 13       		.uleb128 0x13
+ 500 0055 00       		.byte	0
+ 501 0056 00       		.byte	0
+ 502 0057 07       		.uleb128 0x7
+ 503 0058 05       		.uleb128 0x5
+ 504 0059 00       		.byte	0
+ 505 005a 03       		.uleb128 0x3
+ 506 005b 0E       		.uleb128 0xe
+ 507 005c 3A       		.uleb128 0x3a
+ 508 005d 0B       		.uleb128 0xb
+ 509 005e 3B       		.uleb128 0x3b
+ 510 005f 0B       		.uleb128 0xb
+ 511 0060 49       		.uleb128 0x49
+ 512 0061 13       		.uleb128 0x13
+ 513 0062 02       		.uleb128 0x2
+ 514 0063 18       		.uleb128 0x18
+ 515 0064 00       		.byte	0
+ 516 0065 00       		.byte	0
+ 517 0066 08       		.uleb128 0x8
+ 518 0067 05       		.uleb128 0x5
+ 519 0068 00       		.byte	0
+ 520 0069 03       		.uleb128 0x3
+ 521 006a 0E       		.uleb128 0xe
+ 522 006b 3A       		.uleb128 0x3a
+ 523 006c 0B       		.uleb128 0xb
+ 524 006d 3B       		.uleb128 0x3b
+ 525 006e 0B       		.uleb128 0xb
+ 526 006f 49       		.uleb128 0x49
+ 527 0070 13       		.uleb128 0x13
+ 528 0071 02       		.uleb128 0x2
+ 529 0072 17       		.uleb128 0x17
+ 530 0073 00       		.byte	0
+ 531 0074 00       		.byte	0
+ 532 0075 09       		.uleb128 0x9
+ 533 0076 34       		.uleb128 0x34
+ 534 0077 00       		.byte	0
+ 535 0078 03       		.uleb128 0x3
+ 536 0079 0E       		.uleb128 0xe
+ 537 007a 3A       		.uleb128 0x3a
+ 538 007b 0B       		.uleb128 0xb
+ 539 007c 3B       		.uleb128 0x3b
+ 540 007d 0B       		.uleb128 0xb
+ 541 007e 49       		.uleb128 0x49
+ 542 007f 13       		.uleb128 0x13
+ 543 0080 02       		.uleb128 0x2
+ 544 0081 18       		.uleb128 0x18
+ 545 0082 00       		.byte	0
+ 546 0083 00       		.byte	0
+ARM GAS  C:\Users\unyacat\AppData\Local\Temp\ccnjDJTH.s 			page 20
+
+
+ 547 0084 0A       		.uleb128 0xa
+ 548 0085 0F       		.uleb128 0xf
+ 549 0086 00       		.byte	0
+ 550 0087 0B       		.uleb128 0xb
+ 551 0088 0B       		.uleb128 0xb
+ 552 0089 49       		.uleb128 0x49
+ 553 008a 13       		.uleb128 0x13
+ 554 008b 00       		.byte	0
+ 555 008c 00       		.byte	0
+ 556 008d 0B       		.uleb128 0xb
+ 557 008e 2E       		.uleb128 0x2e
+ 558 008f 01       		.byte	0x1
+ 559 0090 3F       		.uleb128 0x3f
+ 560 0091 19       		.uleb128 0x19
+ 561 0092 03       		.uleb128 0x3
+ 562 0093 0E       		.uleb128 0xe
+ 563 0094 3A       		.uleb128 0x3a
+ 564 0095 0B       		.uleb128 0xb
+ 565 0096 3B       		.uleb128 0x3b
+ 566 0097 0B       		.uleb128 0xb
+ 567 0098 27       		.uleb128 0x27
+ 568 0099 19       		.uleb128 0x19
+ 569 009a 49       		.uleb128 0x49
+ 570 009b 13       		.uleb128 0x13
+ 571 009c 11       		.uleb128 0x11
+ 572 009d 01       		.uleb128 0x1
+ 573 009e 12       		.uleb128 0x12
+ 574 009f 06       		.uleb128 0x6
+ 575 00a0 40       		.uleb128 0x40
+ 576 00a1 18       		.uleb128 0x18
+ 577 00a2 9742     		.uleb128 0x2117
+ 578 00a4 19       		.uleb128 0x19
+ 579 00a5 01       		.uleb128 0x1
+ 580 00a6 13       		.uleb128 0x13
+ 581 00a7 00       		.byte	0
+ 582 00a8 00       		.byte	0
+ 583 00a9 0C       		.uleb128 0xc
+ 584 00aa 34       		.uleb128 0x34
+ 585 00ab 00       		.byte	0
+ 586 00ac 03       		.uleb128 0x3
+ 587 00ad 0E       		.uleb128 0xe
+ 588 00ae 3A       		.uleb128 0x3a
+ 589 00af 0B       		.uleb128 0xb
+ 590 00b0 3B       		.uleb128 0x3b
+ 591 00b1 0B       		.uleb128 0xb
+ 592 00b2 49       		.uleb128 0x49
+ 593 00b3 13       		.uleb128 0x13
+ 594 00b4 02       		.uleb128 0x2
+ 595 00b5 17       		.uleb128 0x17
+ 596 00b6 00       		.byte	0
+ 597 00b7 00       		.byte	0
+ 598 00b8 0D       		.uleb128 0xd
+ 599 00b9 26       		.uleb128 0x26
+ 600 00ba 00       		.byte	0
+ 601 00bb 49       		.uleb128 0x49
+ 602 00bc 13       		.uleb128 0x13
+ 603 00bd 00       		.byte	0
+ARM GAS  C:\Users\unyacat\AppData\Local\Temp\ccnjDJTH.s 			page 21
+
+
+ 604 00be 00       		.byte	0
+ 605 00bf 00       		.byte	0
+ 606              		.section	.debug_loc,"",%progbits
+ 607              	.Ldebug_loc0:
+ 608              	.LLST0:
+ 609 0000 00000000 		.4byte	.LVL0
+ 610 0004 08000000 		.4byte	.LVL1
+ 611 0008 0100     		.2byte	0x1
+ 612 000a 51       		.byte	0x51
+ 613 000b 08000000 		.4byte	.LVL1
+ 614 000f 12000000 		.4byte	.LFE0
+ 615 0013 0400     		.2byte	0x4
+ 616 0015 F3       		.byte	0xf3
+ 617 0016 01       		.uleb128 0x1
+ 618 0017 51       		.byte	0x51
+ 619 0018 9F       		.byte	0x9f
+ 620 0019 00000000 		.4byte	0
+ 621 001d 00000000 		.4byte	0
+ 622              	.LLST1:
+ 623 0021 00000000 		.4byte	.LVL2
+ 624 0025 06000000 		.4byte	.LVL4
+ 625 0029 0100     		.2byte	0x1
+ 626 002b 50       		.byte	0x50
+ 627 002c 06000000 		.4byte	.LVL4
+ 628 0030 08000000 		.4byte	.LVL5
+ 629 0034 0100     		.2byte	0x1
+ 630 0036 53       		.byte	0x53
+ 631 0037 08000000 		.4byte	.LVL5
+ 632 003b 12000000 		.4byte	.LFE1
+ 633 003f 0400     		.2byte	0x4
+ 634 0041 F3       		.byte	0xf3
+ 635 0042 01       		.uleb128 0x1
+ 636 0043 50       		.byte	0x50
+ 637 0044 9F       		.byte	0x9f
+ 638 0045 00000000 		.4byte	0
+ 639 0049 00000000 		.4byte	0
+ 640              	.LLST2:
+ 641 004d 00000000 		.4byte	.LVL2
+ 642 0051 06000000 		.4byte	.LVL4
+ 643 0055 0100     		.2byte	0x1
+ 644 0057 50       		.byte	0x50
+ 645 0058 06000000 		.4byte	.LVL4
+ 646 005c 08000000 		.4byte	.LVL5
+ 647 0060 0100     		.2byte	0x1
+ 648 0062 53       		.byte	0x53
+ 649 0063 08000000 		.4byte	.LVL5
+ 650 0067 12000000 		.4byte	.LFE1
+ 651 006b 0400     		.2byte	0x4
+ 652 006d F3       		.byte	0xf3
+ 653 006e 01       		.uleb128 0x1
+ 654 006f 50       		.byte	0x50
+ 655 0070 9F       		.byte	0x9f
+ 656 0071 00000000 		.4byte	0
+ 657 0075 00000000 		.4byte	0
+ 658              	.LLST3:
+ 659 0079 04000000 		.4byte	.LVL3
+ 660 007d 06000000 		.4byte	.LVL4
+ARM GAS  C:\Users\unyacat\AppData\Local\Temp\ccnjDJTH.s 			page 22
+
+
+ 661 0081 0100     		.2byte	0x1
+ 662 0083 52       		.byte	0x52
+ 663 0084 06000000 		.4byte	.LVL4
+ 664 0088 08000000 		.4byte	.LVL5
+ 665 008c 0800     		.2byte	0x8
+ 666 008e 70       		.byte	0x70
+ 667 008f 00       		.sleb128 0
+ 668 0090 38       		.byte	0x38
+ 669 0091 24       		.byte	0x24
+ 670 0092 72       		.byte	0x72
+ 671 0093 00       		.sleb128 0
+ 672 0094 21       		.byte	0x21
+ 673 0095 9F       		.byte	0x9f
+ 674 0096 08000000 		.4byte	.LVL5
+ 675 009a 0A000000 		.4byte	.LVL6
+ 676 009e 1300     		.2byte	0x13
+ 677 00a0 70       		.byte	0x70
+ 678 00a1 00       		.sleb128 0
+ 679 00a2 08       		.byte	0x8
+ 680 00a3 FF       		.byte	0xff
+ 681 00a4 1A       		.byte	0x1a
+ 682 00a5 38       		.byte	0x38
+ 683 00a6 24       		.byte	0x24
+ 684 00a7 73       		.byte	0x73
+ 685 00a8 00       		.sleb128 0
+ 686 00a9 08       		.byte	0x8
+ 687 00aa FF       		.byte	0xff
+ 688 00ab 1A       		.byte	0x1a
+ 689 00ac 40       		.byte	0x40
+ 690 00ad 24       		.byte	0x24
+ 691 00ae 21       		.byte	0x21
+ 692 00af 72       		.byte	0x72
+ 693 00b0 00       		.sleb128 0
+ 694 00b1 21       		.byte	0x21
+ 695 00b2 9F       		.byte	0x9f
+ 696 00b3 00000000 		.4byte	0
+ 697 00b7 00000000 		.4byte	0
+ 698              		.section	.debug_aranges,"",%progbits
+ 699 0000 24000000 		.4byte	0x24
+ 700 0004 0200     		.2byte	0x2
+ 701 0006 00000000 		.4byte	.Ldebug_info0
+ 702 000a 04       		.byte	0x4
+ 703 000b 00       		.byte	0
+ 704 000c 0000     		.2byte	0
+ 705 000e 0000     		.2byte	0
+ 706 0010 00000000 		.4byte	.LFB0
+ 707 0014 12000000 		.4byte	.LFE0-.LFB0
+ 708 0018 00000000 		.4byte	.LFB1
+ 709 001c 12000000 		.4byte	.LFE1-.LFB1
+ 710 0020 00000000 		.4byte	0
+ 711 0024 00000000 		.4byte	0
+ 712              		.section	.debug_ranges,"",%progbits
+ 713              	.Ldebug_ranges0:
+ 714 0000 00000000 		.4byte	.LFB0
+ 715 0004 12000000 		.4byte	.LFE0
+ 716 0008 00000000 		.4byte	.LFB1
+ 717 000c 12000000 		.4byte	.LFE1
+ARM GAS  C:\Users\unyacat\AppData\Local\Temp\ccnjDJTH.s 			page 23
+
+
+ 718 0010 00000000 		.4byte	0
+ 719 0014 00000000 		.4byte	0
+ 720              		.section	.debug_line,"",%progbits
+ 721              	.Ldebug_line0:
+ 722 0000 77000000 		.section	.debug_str,"MS",%progbits,1
+ 722      02004400 
+ 722      00000201 
+ 722      FB0E0D00 
+ 722      01010101 
+ 723              	.LASF15:
+ 724 0000 76616C75 		.ascii	"value\000"
+ 724      6500
+ 725              	.LASF21:
+ 726 0006 43794765 		.ascii	"CyGetReg24\000"
+ 726      74526567 
+ 726      323400
+ 727              	.LASF20:
+ 728 0011 43795365 		.ascii	"CySetReg24\000"
+ 728      74526567 
+ 728      323400
+ 729              	.LASF14:
+ 730 001c 61646472 		.ascii	"addr\000"
+ 730      00
+ 731              	.LASF11:
+ 732 0021 666C6F61 		.ascii	"float\000"
+ 732      7400
+ 733              	.LASF1:
+ 734 0027 756E7369 		.ascii	"unsigned char\000"
+ 734      676E6564 
+ 734      20636861 
+ 734      7200
+ 735              	.LASF16:
+ 736 0035 746D7041 		.ascii	"tmpAddr\000"
+ 736      64647200 
+ 737              	.LASF5:
+ 738 003d 6C6F6E67 		.ascii	"long unsigned int\000"
+ 738      20756E73 
+ 738      69676E65 
+ 738      6420696E 
+ 738      7400
+ 739              	.LASF3:
+ 740 004f 73686F72 		.ascii	"short unsigned int\000"
+ 740      7420756E 
+ 740      7369676E 
+ 740      65642069 
+ 740      6E7400
+ 741              	.LASF17:
+ 742 0062 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
+ 742      43313120 
+ 742      352E342E 
+ 742      31203230 
+ 742      31363036 
+ 743 0095 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m0 -mthumb -g -O"
+ 743      20726576 
+ 743      6973696F 
+ 743      6E203233 
+ 743      37373135 
+ARM GAS  C:\Users\unyacat\AppData\Local\Temp\ccnjDJTH.s 			page 24
+
+
+ 744 00c8 33202D66 		.ascii	"3 -ffunction-sections -ffat-lto-objects -finline-fu"
+ 744      66756E63 
+ 744      74696F6E 
+ 744      2D736563 
+ 744      74696F6E 
+ 745 00fb 6E637469 		.ascii	"nctions -flto\000"
+ 745      6F6E7320 
+ 745      2D666C74 
+ 745      6F00
+ 746              	.LASF12:
+ 747 0109 646F7562 		.ascii	"double\000"
+ 747      6C6500
+ 748              	.LASF10:
+ 749 0110 75696E74 		.ascii	"uint32\000"
+ 749      333200
+ 750              	.LASF8:
+ 751 0117 756E7369 		.ascii	"unsigned int\000"
+ 751      676E6564 
+ 751      20696E74 
+ 751      00
+ 752              	.LASF7:
+ 753 0124 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 753      206C6F6E 
+ 753      6720756E 
+ 753      7369676E 
+ 753      65642069 
+ 754              	.LASF19:
+ 755 013b 433A5C55 		.ascii	"C:\\Users\\unyacat\\Desktop\\Linebot\\Dynamic Broad"
+ 755      73657273 
+ 755      5C756E79 
+ 755      61636174 
+ 755      5C446573 
+ 756 0169 63617374 		.ascii	"caster\\Dynamic Broadcaster\\Dynamic Broadcaster.cy"
+ 756      65725C44 
+ 756      796E616D 
+ 756      69632042 
+ 756      726F6164 
+ 757 019a 64736E00 		.ascii	"dsn\000"
+ 758              	.LASF18:
+ 759 019e 47656E65 		.ascii	"Generated_Source\\PSoC4\\cyutils.c\000"
+ 759      72617465 
+ 759      645F536F 
+ 759      75726365 
+ 759      5C50536F 
+ 760              	.LASF6:
+ 761 01bf 6C6F6E67 		.ascii	"long long int\000"
+ 761      206C6F6E 
+ 761      6720696E 
+ 761      7400
+ 762              	.LASF13:
+ 763 01cd 63686172 		.ascii	"char\000"
+ 763      00
+ 764              	.LASF2:
+ 765 01d2 73686F72 		.ascii	"short int\000"
+ 765      7420696E 
+ 765      7400
+ 766              	.LASF9:
+ARM GAS  C:\Users\unyacat\AppData\Local\Temp\ccnjDJTH.s 			page 25
+
+
+ 767 01dc 75696E74 		.ascii	"uint8\000"
+ 767      3800
+ 768              	.LASF4:
+ 769 01e2 6C6F6E67 		.ascii	"long int\000"
+ 769      20696E74 
+ 769      00
+ 770              	.LASF0:
+ 771 01eb 7369676E 		.ascii	"signed char\000"
+ 771      65642063 
+ 771      68617200 
+ 772              		.comm	__gnu_lto_v1,1,1
+ 773              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran
