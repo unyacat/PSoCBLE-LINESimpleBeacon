@@ -1,7 +1,10 @@
 # PSoCBLE-LINESimpleBeacon
 PSoC BLE で LINE Simple Beacon を飛ばして入室を検知します．
 
-要: LINE Business ID 
+### 要件
+
++ LINE Business ID (無料 / LINEアカウントで誰でも取得可能)
++ PSoC BLE (手元で試したのは CYBLE-022001-00)
 
 
 
@@ -20,6 +23,10 @@ PSoC BLE で LINE Simple Beacon を飛ばして入室を検知します．
 ### Server
 
 [https://github.com/line/line-bot-sdk-python]() の README.md にあるコードを元に Beacon 受信イベントを受け取ったときの処理を追加している Flask サーバー．
+
+ACCESS TOKEN と 
+
+Heroku に Deploy して URL を LINE に登録しておきます．
 
 ```Python3
 @handler.add(BeaconEvent)
