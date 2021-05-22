@@ -14,15 +14,15 @@ PSoC BLE で LINE Simple Beacon を飛ばして入室を検知します．
 
 ### Peripheral
 
-[https://github.com/cypresssemiconductorco/PSoC-4-BLE/tree/master/100_Projects_in_100_Days/Day009_Dynamic_Broadcaster]() を元にパケットを改造して LINE Simple Beacon を飛ばします．main.c の 233行目あたり．
+[https://github.com/cypresssemiconductorco/PSoC-4-BLE/tree/master/100_Projects_in_100_Days/Day009_Dynamic_Broadcaster](https://github.com/cypresssemiconductorco/PSoC-4-BLE/tree/master/100_Projects_in_100_Days/Day009_Dynamic_Broadcaster) を元にパケットを改造して LINE Simple Beacon を飛ばします．main.c の 233行目あたり．
 
-仕様: [https://github.com/line/line-simple-beacon/blob/master/README.ja.md]() 
+仕様: [https://github.com/line/line-simple-beacon/blob/master/README.ja.md](https://github.com/line/line-simple-beacon/blob/master/README.ja.md) 
 
 
 
 ### Server
 
-[https://github.com/line/line-bot-sdk-python]() の README.md にあるコードを元に Beacon 受信イベントを受け取ったときの処理を追加している Flask サーバー．
+[https://github.com/line/line-bot-sdk-python](https://github.com/line/line-bot-sdk-python) の README.md にあるコードを元に Beacon 受信イベントを受け取ったときの処理を追加している Flask サーバー．
 
 ACCESS TOKEN と 
 
