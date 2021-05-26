@@ -1,6 +1,9 @@
 # PSoCBLE-LINESimpleBeacon
 PSoC BLE で LINE Simple Beacon を飛ばして入室を検知します．
 
+![image](https://user-images.githubusercontent.com/14951631/119604700-7ec9f280-be2a-11eb-8949-e86e60898f64.png)
+
+
 ### 要件
 
 + LINE Business ID (無料 / LINEアカウントで誰でも取得可能)
